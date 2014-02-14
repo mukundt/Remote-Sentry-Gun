@@ -29,8 +29,8 @@ class Stepper {
     void move_absolute(int step_number);
 
     // methods to enable/disable motor:
-    void off();
-    void on();
+    void disable();
+    void enable();
 
     int get_count();
     boolean is_on();
