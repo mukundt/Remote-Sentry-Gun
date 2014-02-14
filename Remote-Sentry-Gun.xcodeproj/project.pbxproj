@@ -474,6 +474,7 @@
 				7AC9CA6618AD880F00F75847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AC9CA6718AD880F00F75847 /* Build configuration list for PBXNativeTarget "Remote-Sentry-GunTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +483,7 @@
 				7AC9CA6918AD880F00F75847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
