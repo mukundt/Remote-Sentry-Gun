@@ -21,10 +21,10 @@
 #define tilt_direction_pin 6
 #define tilt_enable_pin 7
 
-#define step_amount 1
+#define step_amount 10
 
-Stepper pan(pan_step_pin, pan_enable_pin, pan_direction_pin);
-Stepper tilt(tilt_step_pin, tilt_enable_pin, tilt_direction_pin);
+Stepper pan(pan_step_pin, pan_direction_pin, pan_enable_pin);
+Stepper tilt(tilt_step_pin, tilt_direction_pin, tilt_enable_pin);
 boolean pan_left, pan_right, tilt_up, tilt_down;
 
 void setup() {
@@ -53,26 +53,26 @@ void loop() {
   //Temporary serial code - comment when done
   while (Serial.available())
   {
-    byte command = Serial.read(); //Change this to ble_read();
-    
+    char command = Serial.read(); //Change this to ble_read();
+    Serial.println(command);
     switch (command)
     {
-      case 0x01: 
+      case 'a': 
         pan_left = true; 
         break;
-      case 0x02: 
+      case 'd': 
         pan_right = true;
         break;
-      case 0x03: 
+      case 'p': 
         pan_left = pan_right = false;
         break;
-      case 0x04: 
+      case 'w': 
         tilt_up = true;
         break;
-      case 0x05: 
+      case 's': 
         tilt_down = true;
         break;
-      case 0x06: 
+      case 't': 
         tilt_up = tilt_down = false;
         break;
       default: 
@@ -80,9 +80,9 @@ void loop() {
     }
   }
   
-  if (pan_left) {pan.move_absolute(step_amount);}
-  else if (pan_right) {pan.move_absolute(-step_amount);}
-  else if (tilt_up) {tilt.move_absolute(step_amount);}
-  else if (tilt_down) {pan.move_absolute(-step_amount);}
+  if (pan_left) {pan.move_relative(step_amount);}
+  else if (pan_right) {pan.move_relative(-step_amount);}
+  else if (tilt_up) {tilt.move_relative(step_amount);}
+  else if (tilt_down) {tilt.move_relative(-step_amount);}
 
 }
