@@ -80,9 +80,9 @@ void loop() {
     }
   }
   
-  if (pan_left) {pan.move_relative(step_amount);}
-  else if (pan_right) {pan.move_relative(-step_amount);}
-  else if (tilt_up) {tilt.move_relative(step_amount);}
-  else if (tilt_down) {tilt.move_relative(-step_amount);}
+  if (pan_left) pan.move_relative(step_amount);
+  else if (pan_right) pan.move_relative(-step_amount);
+  else if (tilt_up) tilt.move_relative(step_amount);
+  else if (tilt_down) tilt.move_relative(-step_amount);
 
 }
