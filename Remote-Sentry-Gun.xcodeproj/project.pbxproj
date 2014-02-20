@@ -22,6 +22,7 @@
 		7AC9CA5718AD880F00F75847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3618AD880F00F75847 /* UIKit.framework */; };
 		7AC9CA5F18AD880F00F75847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AC9CA5D18AD880F00F75847 /* InfoPlist.strings */; };
 		7AC9CA6118AD880F00F75847 /* Remote_Sentry_GunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */; };
+		7AFB1DBB18B675EF0001DEB2 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFB1DB918B675EF0001DEB2 /* BLE.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		7AC9CA5C18AD880F00F75847 /* Remote-Sentry-GunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Remote-Sentry-GunTests-Info.plist"; sourceTree = "<group>"; };
 		7AC9CA5E18AD880F00F75847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remote_Sentry_GunTests.m; sourceTree = "<group>"; };
+		7AFB1DB818B675EF0001DEB2 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		7AFB1DB918B675EF0001DEB2 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		7AFB1DBA18B675EF0001DEB2 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		7AC9CA3118AD880F00F75847 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AFB1DB718B675EF0001DEB2 /* BLE */,
 				7AC9CA3218AD880F00F75847 /* Foundation.framework */,
 				7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */,
 				7AC9CA3618AD880F00F75847 /* UIKit.framework */,
@@ -153,6 +158,16 @@
 				7AC9CA5D18AD880F00F75847 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AFB1DB718B675EF0001DEB2 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				7AFB1DB818B675EF0001DEB2 /* BLE.h */,
+				7AFB1DB918B675EF0001DEB2 /* BLE.m */,
+				7AFB1DBA18B675EF0001DEB2 /* BLEDefines.h */,
+			);
+			path = BLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +271,7 @@
 				7AC9CA4C18AD880F00F75847 /* ViewController.m in Sources */,
 				7AC9CA4318AD880F00F75847 /* AppDelegate.m in Sources */,
 				7AC9CA3F18AD880F00F75847 /* main.m in Sources */,
+				7AFB1DBB18B675EF0001DEB2 /* BLE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
