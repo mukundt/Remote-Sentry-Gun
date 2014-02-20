@@ -17,6 +17,10 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIButton *buttonConnect;
 @property (weak, nonatomic) IBOutlet UIButton *buttonFire;
+@property (weak, nonatomic) IBOutlet UIButton *buttonLeft;
+@property (weak, nonatomic) IBOutlet UIButton *buttonRight;
+@property (weak, nonatomic) IBOutlet UIButton *buttonUp;
+@property (weak, nonatomic) IBOutlet UIButton *buttonDown;
 
 
 

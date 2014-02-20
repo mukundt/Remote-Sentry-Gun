@@ -77,7 +77,10 @@
 
 - (IBAction)startFire:(id)sender
 {
-   //send char 'f' to BLE shield
+    unsigned char toSend = 'f';
+    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+    
+    [bleShield write:data];
 }
 
 - (IBAction)endFire:(id)sender
