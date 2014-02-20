@@ -78,9 +78,12 @@
 - (IBAction)startFire:(id)sender
 {
     unsigned char toSend = 'f';
+    
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
     
     [bleShield write:data];
+    
+    //test this by printing rec'd char at Arduino's side
 }
 
 - (IBAction)endFire:(id)sender

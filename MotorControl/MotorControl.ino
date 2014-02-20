@@ -53,7 +53,7 @@ void loop() {
   //Temporary serial code - comment when done
   while (Serial.available())
   {
-    char command = Serial.read(); //Change this to ble_read();
+    char command = Serial.read(); //Change this to (char)ble_read();
     Serial.println(command);
     switch (command)
     {
