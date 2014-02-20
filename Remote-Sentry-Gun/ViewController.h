@@ -8,7 +8,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLE.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <BLEDelegate> {
+    BLE *bleShield;
+}
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+@property (weak, nonatomic) IBOutlet UIButton *buttonConnect;
 
 @end
