@@ -75,6 +75,15 @@
     [self.buttonConnect setTitle:@"Connect" forState:UIControlStateNormal];
 }
 
+- (IBAction)startFire:(id)sender
+{
+   //send char 'f' to BLE shield
+}
+
+- (IBAction)endFire:(id)sender
+{
+    //send char 'n' to BLE shield
+}
 
 
 @end
