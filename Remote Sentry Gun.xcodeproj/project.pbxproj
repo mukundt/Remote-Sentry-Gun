@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7AC9CA2A18AD880F00F75847 /* Build configuration list for PBXProject "Remote-Sentry-Gun" */;
+			buildConfigurationList = 7AC9CA2A18AD880F00F75847 /* Build configuration list for PBXProject "Remote Sentry Gun" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -480,7 +480,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7AC9CA2A18AD880F00F75847 /* Build configuration list for PBXProject "Remote-Sentry-Gun" */ = {
+		7AC9CA2A18AD880F00F75847 /* Build configuration list for PBXProject "Remote Sentry Gun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7AC9CA6218AD880F00F75847 /* Debug */,

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "7AC9CA2E18AD880F00F75847"
                BuildableName = "Remote-Sentry-Gun.app"
                BlueprintName = "Remote-Sentry-Gun"
-               ReferencedContainer = "container:Remote-Sentry-Gun.xcodeproj">
+               ReferencedContainer = "container:Remote Sentry Gun.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "7AC9CA5218AD880F00F75847"
                BuildableName = "Remote-Sentry-GunTests.xctest"
                BlueprintName = "Remote-Sentry-GunTests"
-               ReferencedContainer = "container:Remote-Sentry-Gun.xcodeproj">
+               ReferencedContainer = "container:Remote Sentry Gun.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "7AC9CA2E18AD880F00F75847"
             BuildableName = "Remote-Sentry-Gun.app"
             BlueprintName = "Remote-Sentry-Gun"
-            ReferencedContainer = "container:Remote-Sentry-Gun.xcodeproj">
+            ReferencedContainer = "container:Remote Sentry Gun.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "7AC9CA2E18AD880F00F75847"
             BuildableName = "Remote-Sentry-Gun.app"
             BlueprintName = "Remote-Sentry-Gun"
-            ReferencedContainer = "container:Remote-Sentry-Gun.xcodeproj">
+            ReferencedContainer = "container:Remote Sentry Gun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "7AC9CA2E18AD880F00F75847"
             BuildableName = "Remote-Sentry-Gun.app"
             BlueprintName = "Remote-Sentry-Gun"
-            ReferencedContainer = "container:Remote-Sentry-Gun.xcodeproj">
+            ReferencedContainer = "container:Remote Sentry Gun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
