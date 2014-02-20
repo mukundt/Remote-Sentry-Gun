@@ -1,4 +1,6 @@
 Remote-Sentry-Gun
 =================
 
-Codebase for integrating iOS control with Project Sentry Gun
+Integrating iOS bluetooth control with Project Sentry Gun
+
+http://projectsentrygun.rudolphlabs.com
