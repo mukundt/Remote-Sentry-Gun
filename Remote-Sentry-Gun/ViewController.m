@@ -20,6 +20,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background_temp.jpg"]];
+    [self.view addSubview:backgroundView];
+    [self.view sendSubviewToBack:backgroundView];
+    
     bleShield = [[BLE alloc] init];
     [bleShield controlSetup];
     bleShield.delegate = self;
@@ -78,7 +82,7 @@
 - (IBAction)startFire:(id)sender
 {
     unsigned char toSend = 'f';
-    
+     
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
     
     [bleShield write:data];

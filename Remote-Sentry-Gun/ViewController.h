@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonRight;
 @property (weak, nonatomic) IBOutlet UIButton *buttonUp;
 @property (weak, nonatomic) IBOutlet UIButton *buttonDown;
+@property (nonatomic, strong) UIView *backgroundView;
 
 
 

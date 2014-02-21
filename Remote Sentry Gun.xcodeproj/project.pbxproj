@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AC6799118B6C79F005D0863 /* Background_temp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6799018B6C79F005D0863 /* Background_temp.jpg */; };
 		7AC9CA3318AD880F00F75847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3218AD880F00F75847 /* Foundation.framework */; };
 		7AC9CA3518AD880F00F75847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */; };
 		7AC9CA3718AD880F00F75847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3618AD880F00F75847 /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AC6799018B6C79F005D0863 /* Background_temp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background_temp.jpg; sourceTree = "<group>"; };
 		7AC9CA2F18AD880F00F75847 /* Remote-Sentry-Gun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote-Sentry-Gun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC9CA3218AD880F00F75847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +136,7 @@
 		7AC9CA3918AD880F00F75847 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7AC6799018B6C79F005D0863 /* Background_temp.jpg */,
 				7AC9CA3A18AD880F00F75847 /* Remote-Sentry-Gun-Info.plist */,
 				7AC9CA3B18AD880F00F75847 /* InfoPlist.strings */,
 				7AC9CA3E18AD880F00F75847 /* main.m */,
@@ -217,6 +220,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Project Sentry Gun";
 				TargetAttributes = {
+					7AC9CA2E18AD880F00F75847 = {
+						DevelopmentTeam = 2P6XS46L68;
+					};
 					7AC9CA5218AD880F00F75847 = {
 						TestTargetID = 7AC9CA2E18AD880F00F75847;
 					};
@@ -246,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC6799118B6C79F005D0863 /* Background_temp.jpg in Resources */,
 				7AC9CA4918AD880F00F75847 /* Main_iPad.storyboard in Resources */,
 				7AC9CA4E18AD880F00F75847 /* Images.xcassets in Resources */,
 				7AC9CA4618AD880F00F75847 /* Main_iPhone.storyboard in Resources */,
