@@ -17,7 +17,7 @@ class Stepper {
   public:
     // constructors:
     Stepper(int step_pin, int direction_pin, int enable_pin);
-        
+
     // methods to override default values:
     void set_delay(float delay_milliseconds);
     void set_dwell(int dwell_microseconds);
@@ -27,7 +27,7 @@ class Stepper {
     // methods to move motor:
     void move_relative(int num_steps);
     void move_absolute(int step_number);
-    
+
     // methods to enable/disable motor:
     void disable();
     void enable();
@@ -40,7 +40,7 @@ class Stepper {
     int _step_pin;
     int _enable_pin;
     int _direction_pin;
-    
+
     // delay parameters:
     int _delay;
     boolean _delay_in_microseconds;
