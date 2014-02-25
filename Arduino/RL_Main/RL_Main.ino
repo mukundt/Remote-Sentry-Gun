@@ -12,6 +12,7 @@
 #include <ble_shield.h>
 #include <services.h>
 #include "RL_Stepper.h"
+#include "RL_Trigger.h"
 
 #define pan_step_pin 2
 #define pan_direction_pin 3
@@ -21,11 +22,16 @@
 #define tilt_direction_pin 6
 #define tilt_enable_pin 7
 
+#define trigger_pin 8
+
 #define step_amount 10
 
 Stepper pan(pan_step_pin, pan_direction_pin, pan_enable_pin);
 Stepper tilt(tilt_step_pin, tilt_direction_pin, tilt_enable_pin);
-boolean pan_left, pan_right, tilt_up, tilt_down;
+Trigger trigger(trigger_pin);
+
+boolean pan_left, pan_right;
+boolean tilt_up, tilt_down;
 
 void setup() {
    
@@ -36,9 +42,8 @@ void setup() {
   /*Bluetooth code - uncomment when ready
   
   
-  
-  */
   ble_begin();
+  */
   
   //Temporary serial code - comment when done
   Serial.begin(57600);
@@ -76,6 +81,10 @@ void loop() {
       case 't': 
         tilt_up = tilt_down = false;
         break;
+      case 'f':
+        trigger.squeeze();
+      case 'n':
+        trigger.release();
       default: 
         break;
     }
