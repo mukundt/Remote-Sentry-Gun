@@ -35,9 +35,10 @@ void setup() {
   pan_left = pan_right = tilt_up = tilt_down = false; 
   /*Bluetooth code - uncomment when ready
   
-  ble_begin();
+  
   
   */
+  ble_begin();
   
   //Temporary serial code - comment when done
   Serial.begin(57600);
