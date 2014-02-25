@@ -84,8 +84,10 @@ void loop() {
         break;
       case 'f':
         trigger_on = true;
+        break;
       case 'n':
         trigger_on = false;
+        break;
       default: 
         break;
     }
