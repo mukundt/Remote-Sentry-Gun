@@ -32,13 +32,14 @@ Trigger trigger(trigger_pin);
 
 boolean pan_left, pan_right;
 boolean tilt_up, tilt_down;
+boolean trigger_on;
 
 void setup() {
    
   pan.enable();
   tilt.enable();
  
-  pan_left = pan_right = tilt_up = tilt_down = false; 
+  pan_left = pan_right = tilt_up = tilt_down = trigger_on = false; 
   /*Bluetooth code - uncomment when ready
   
   
@@ -82,17 +83,19 @@ void loop() {
         tilt_up = tilt_down = false;
         break;
       case 'f':
-        trigger.squeeze();
+        trigger_on = true;
       case 'n':
-        trigger.release();
+        trigger_on = false;
       default: 
         break;
     }
   }
   
+  //sends relevant command every clock cycle
   if (pan_left) pan.move_relative(step_amount);
   else if (pan_right) pan.move_relative(-step_amount);
   else if (tilt_up) tilt.move_relative(step_amount);
   else if (tilt_down) tilt.move_relative(-step_amount);
+  else if (trigger_on) trigger.single_shot();
 
 }
