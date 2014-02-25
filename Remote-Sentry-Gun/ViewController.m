@@ -82,7 +82,7 @@
 - (IBAction)startFire:(id)sender
 {
     unsigned char toSend = 'f';
-     
+    
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
     
     [bleShield write:data];
