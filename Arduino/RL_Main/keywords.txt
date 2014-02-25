@@ -1,16 +1,16 @@
 #######################################
-# Syntax Coloring Map
+# Syntax Coloring Map                 #
 #######################################
 
 #######################################
-# Datatypes (KEYWORD1)
+# Datatypes (KEYWORD1)                #
 #######################################
 
 Stepper	KEYWORD1
 Trigger	KEYWORD1
 
 #######################################
-# Methods and Functions (KEYWORD2)
+# Methods and Functions (KEYWORD2)    #
 #######################################
 
 set_delay	KEYWORD2
@@ -23,7 +23,6 @@ disable	KEYWORD2
 enable	KEYWORD2
 get_count	KEYWORD2
 is_enabled	KEYWORD2
-
 set_delay	KEYWORD2
 set_dwell	KEYWORD2
 squeeze	KEYWORD2
