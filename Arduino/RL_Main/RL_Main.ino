@@ -49,9 +49,8 @@ void setup() {
 
 void loop() {
   while (ble_available())
- 
-  //Temporary serial code - comment when done
-  while (Serial.available())
+   //Temporary serial code - comment when done
+  //while (Serial.available())
   {
     char command = (char)ble_read();
     Serial.println(command);
@@ -93,4 +92,5 @@ void loop() {
   else if (tilt_down) tilt.move_relative(-step_amount);
   else if (trigger_on) trigger.single_shot();
 
+  ble_do_events();
 }
