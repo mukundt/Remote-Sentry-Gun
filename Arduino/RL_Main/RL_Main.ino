@@ -22,7 +22,7 @@
 #define tilt_direction_pin 6
 #define tilt_enable_pin 7
 
-#define trigger_pin 8
+#define trigger_pin 14
 
 #define step_amount 10
 
