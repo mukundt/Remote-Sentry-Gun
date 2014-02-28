@@ -20,9 +20,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background_temp.jpg"]];
+   /* UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background_temp.jpg"]];
     [self.view addSubview:backgroundView];
-    [self.view sendSubviewToBack:backgroundView];
+    [self.view sendSubviewToBack:backgroundView]; */
+    
+    self.view.backgroundColor = [UIColor greenColor];
     
     bleShield = [[BLE alloc] init];
     [bleShield controlSetup];
@@ -81,6 +83,8 @@
 
 - (IBAction)startFire:(id)sender
 {
+    self.view.backgroundColor = [UIColor redColor];
+    
     unsigned char toSend = 'f';
     
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
@@ -92,6 +96,9 @@
 
 - (IBAction)endFire:(id)sender
 {
+    
+    self.view.backgroundColor = [UIColor greenColor];
+    
     unsigned char toSend = 'n';
     
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
