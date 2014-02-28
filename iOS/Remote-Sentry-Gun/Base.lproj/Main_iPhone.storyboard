@@ -43,6 +43,10 @@
                                 <state key="normal" title="Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="endTilt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="m6h-0n-w54"/>
+                                    <action selector="startUp:" destination="vXZ-lx-hvc" eventType="touchDown" id="yV5-ca-Ovm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwH-he-b05">
                                 <rect key="frame" x="425" y="243" width="40" height="30"/>
@@ -50,6 +54,10 @@
                                 <state key="normal" title="Down">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="endTilt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Brj-YO-NAE"/>
+                                    <action selector="startDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="Vrr-pr-u7R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVY-MQ-kIz">
                                 <rect key="frame" x="374" y="195" width="30" height="30"/>
@@ -57,6 +65,10 @@
                                 <state key="normal" title="Left">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="endPan:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="88w-p7-pgd"/>
+                                    <action selector="startLeft:" destination="vXZ-lx-hvc" eventType="touchDown" id="7Z1-kw-Z7R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0V-9b-Hu5">
                                 <rect key="frame" x="480" y="195" width="37" height="30"/>
@@ -64,6 +76,10 @@
                                 <state key="normal" title="Right">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="endPan:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iyK-fz-fg3"/>
+                                    <action selector="startRight:" destination="vXZ-lx-hvc" eventType="touchDown" id="ELt-tF-QK0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remote Sentry Gun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg8-y0-x00">
                                 <rect key="frame" x="188" y="24" width="192" height="21"/>

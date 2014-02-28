@@ -92,7 +92,73 @@
 
 - (IBAction)endFire:(id)sender
 {
-    //send char 'n' to BLE shield
+    unsigned char toSend = 'n';
+    
+    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+    
+    [bleShield write:data];
+}
+
+- (IBAction)startLeft:(id)sender
+{
+    unsigned char toSend = 'a';
+    
+    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+    
+    [bleShield write:data];
+    
+    //test this by printing rec'd char at Arduino's side
+}
+
+- (IBAction)startRight:(id)sender
+{
+    unsigned char toSend = 'd';
+    
+    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+    
+    [bleShield write:data];
+    
+    //test this by printing rec'd char at Arduino's side
+}
+
+- (IBAction)endPan:(id)sender
+{
+    unsigned char toSend = 'p';
+    
+    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+    
+    [bleShield write:data];
+}
+
+- (IBAction)startUp:(id)sender
+{
+    unsigned char toSend = 'w';
+    
+    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+    
+    [bleShield write:data];
+    
+    //test this by printing rec'd char at Arduino's side
+}
+
+- (IBAction)startDown:(id)sender
+{
+    unsigned char toSend = 's';
+    
+    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+    
+    [bleShield write:data];
+    
+    //test this by printing rec'd char at Arduino's side
+}
+
+- (IBAction)endTilt:(id)sender
+{
+    unsigned char toSend = 't';
+    
+    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+    
+    [bleShield write:data];
 }
 
 
