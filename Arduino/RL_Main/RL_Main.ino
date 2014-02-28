@@ -40,27 +40,20 @@ void setup() {
   tilt.enable();
  
   pan_left = pan_right = tilt_up = tilt_down = trigger_on = false; 
-  /*Bluetooth code - uncomment when ready
-  
   
   ble_begin();
-  */
   
   //Temporary serial code - comment when done
   Serial.begin(57600);
 }
 
 void loop() {
-  /*Bluetooth code - uncomment when ready
-  
   while (ble_available())
  
-  */
-
   //Temporary serial code - comment when done
   while (Serial.available())
   {
-    char command = Serial.read(); //Change this to (char)ble_read();
+    char command = (char)ble_read();
     Serial.println(command);
     switch (command)
     {
