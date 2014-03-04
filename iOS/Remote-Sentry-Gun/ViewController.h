@@ -9,9 +9,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BLE.h"
+//#import "MotionJpegImageView.h"
 
 @interface ViewController : UIViewController <BLEDelegate> {
     BLE *bleShield;
+//@private
+    //MotionJpegImageView *_imageView;
 }
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
@@ -21,8 +24,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonRight;
 @property (weak, nonatomic) IBOutlet UIButton *buttonUp;
 @property (weak, nonatomic) IBOutlet UIButton *buttonDown;
-@property (nonatomic, strong) UIView *backgroundView;
-
-
+//@property (nonatomic, strong) UIView *backgroundView;
 
 @end

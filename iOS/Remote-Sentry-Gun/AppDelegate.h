@@ -8,8 +8,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MotionJpegImageView.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    @private
+        MotionJpegImageView *_imageView;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

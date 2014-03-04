@@ -24,7 +24,15 @@
     [self.view addSubview:backgroundView];
     [self.view sendSubviewToBack:backgroundView]; */
     
-    self.view.backgroundColor = [UIColor greenColor];
+    //self.view.backgroundColor = [UIColor greenColor];
+    
+    /*NSURL *url = [NSURL URLWithString:@"http://webcam6.med.miami.edu/mjpg/video.mjpg"];
+    
+    _imageView = [[MotionJpegImageView alloc] init];
+    _imageView.url = url;
+    [self.view addSubview:_imageView];
+    [self.view sendSubviewToBack:_imageView];
+    [_imageView play];*/
     
     bleShield = [[BLE alloc] init];
     [bleShield controlSetup];
@@ -83,7 +91,7 @@
 
 - (IBAction)startFire:(id)sender
 {
-    self.view.backgroundColor = [UIColor redColor];
+    //self.view.backgroundColor = [UIColor redColor];
     
     unsigned char toSend = 'f';
     
@@ -97,7 +105,7 @@
 - (IBAction)endFire:(id)sender
 {
     
-    self.view.backgroundColor = [UIColor greenColor];
+    //self.view.backgroundColor = [UIColor greenColor];
     
     unsigned char toSend = 'n';
     

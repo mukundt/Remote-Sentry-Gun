@@ -14,6 +14,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSURL *url = [NSURL URLWithString:@"http://webcam6.med.miami.edu/mjpg/video.mjpg"];
+    
+    _imageView = [[MotionJpegImageView alloc] init];
+    _imageView.url = url;
+    [self.window addSubview:_imageView];
+    [self.window sendSubviewToBack:_imageView];
+    [_imageView play];
+    
     return YES;
 }
 							
