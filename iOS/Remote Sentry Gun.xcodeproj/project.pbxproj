@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A0AC84318BC48C800E42C4E /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AC84118BC48C800E42C4E /* BLE.m */; };
+		7A2A906118C646AB00510805 /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A906018C646AB00510805 /* MotionJpegImageView.mm */; };
 		7AC6799118B6C79F005D0863 /* Background_temp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6799018B6C79F005D0863 /* Background_temp.jpg */; };
 		7AC9CA3318AD880F00F75847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3218AD880F00F75847 /* Foundation.framework */; };
 		7AC9CA3518AD880F00F75847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 		7A0AC84018BC48C800E42C4E /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		7A0AC84118BC48C800E42C4E /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		7A0AC84218BC48C800E42C4E /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		7A2A905F18C646AB00510805 /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
+		7A2A906018C646AB00510805 /* MotionJpegImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MotionJpegImageView.mm; sourceTree = "<group>"; };
 		7AC6799018B6C79F005D0863 /* Background_temp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background_temp.jpg; sourceTree = "<group>"; };
 		7AC9CA2F18AD880F00F75847 /* Remote-Sentry-Gun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote-Sentry-Gun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC9CA3218AD880F00F75847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,15 @@
 			path = BLE;
 			sourceTree = "<group>";
 		};
+		7A2A905E18C646AB00510805 /* MotionJpegImageView */ = {
+			isa = PBXGroup;
+			children = (
+				7A2A905F18C646AB00510805 /* MotionJpegImageView.h */,
+				7A2A906018C646AB00510805 /* MotionJpegImageView.mm */,
+			);
+			path = MotionJpegImageView;
+			sourceTree = "<group>";
+		};
 		7AC9CA2618AD880F00F75847 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 		7AC9CA3118AD880F00F75847 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A2A905E18C646AB00510805 /* MotionJpegImageView */,
 				7A0AC83F18BC48C800E42C4E /* BLE */,
 				7AC9CA3218AD880F00F75847 /* Foundation.framework */,
 				7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */,
@@ -277,6 +290,7 @@
 			files = (
 				7AC9CA4C18AD880F00F75847 /* ViewController.m in Sources */,
 				7AC9CA4318AD880F00F75847 /* AppDelegate.m in Sources */,
+				7A2A906118C646AB00510805 /* MotionJpegImageView.mm in Sources */,
 				7AC9CA3F18AD880F00F75847 /* main.m in Sources */,
 				7A0AC84318BC48C800E42C4E /* BLE.m in Sources */,
 			);
