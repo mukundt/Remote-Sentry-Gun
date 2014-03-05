@@ -9,12 +9,13 @@
 
 #import <UIKit/UIKit.h>
 #import "BLE.h"
-//#import "MotionJpegImageView.h"
+#import "MotionJpegImageView.h"
 
 @interface ViewController : UIViewController <BLEDelegate> {
     BLE *bleShield;
-//@private
-    //MotionJpegImageView *_imageView;
+@private
+    MotionJpegImageView *_imageView;
+    UIWebView *_webView;
 }
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;

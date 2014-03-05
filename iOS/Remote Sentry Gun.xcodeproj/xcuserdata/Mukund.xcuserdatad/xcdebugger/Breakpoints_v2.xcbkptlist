@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Remote-Sentry-Gun/ViewController.m"
-            timestampString = "415320953.03475"
+            timestampString = "415685054.576695"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "-startFire:"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-bleDidDisconnect"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
