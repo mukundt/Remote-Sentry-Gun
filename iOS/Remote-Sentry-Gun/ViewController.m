@@ -37,7 +37,7 @@
     webFrame.origin.x = 0.0;
     _webView.frame = webFrame;*/
     
-    NSURL *url = [NSURL URLWithString:@"http://shibuya.ipcam.jp:60001/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
+    NSURL *url = [NSURL URLWithString:@"http://admin:rudolphlabs@192.168.1.5/video/mjpg.cgi"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
