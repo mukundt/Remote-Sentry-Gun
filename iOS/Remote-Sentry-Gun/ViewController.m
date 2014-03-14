@@ -37,14 +37,16 @@
     webFrame.origin.x = 0.0;
     _webView.frame = webFrame;*/
     
-    NSURL *url = [NSURL URLWithString:@"http://admin:rudolphlabs@192.168.1.5/video/mjpg.cgi"];
+    //NSURL *url = [NSURL URLWithString:@"http://admin:rudolphlabs@192.168.1.5/video/mjpg.cgi"];
+    NSURL *url = [NSURL URLWithString:@"http://shibuya.ipcam.jp:60001/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
     //  [self.window addSubview:_webView];
     
   //  webFrame.origin.y += webFrame.size.height;
-    _imageView = [[MotionJpegImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.height, self.view.bounds.size.width)];
+    _imageView = [[MotionJpegImageView alloc] initWithFrame:CGRectMake(self.view.frame.origin.y, self.view.frame.origin.x,
+[[UIScreen mainScreen] bounds].size.height,[[UIScreen mainScreen] bounds].size.width)];
     _imageView.url = url;
     [self.view addSubview:_imageView];
     [self.view sendSubviewToBack:_imageView];

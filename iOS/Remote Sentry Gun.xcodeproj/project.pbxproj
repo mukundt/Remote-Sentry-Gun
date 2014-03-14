@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A03DF9B18C8D7F200F8C22A /* Background_temp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A03DF9A18C8D7F200F8C22A /* Background_temp.jpg */; };
 		7A0AC84318BC48C800E42C4E /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AC84118BC48C800E42C4E /* BLE.m */; };
 		7A2A906118C646AB00510805 /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A906018C646AB00510805 /* MotionJpegImageView.mm */; };
-		7AC6799118B6C79F005D0863 /* Background_temp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6799018B6C79F005D0863 /* Background_temp.jpg */; };
 		7AC9CA3318AD880F00F75847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3218AD880F00F75847 /* Foundation.framework */; };
 		7AC9CA3518AD880F00F75847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */; };
 		7AC9CA3718AD880F00F75847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3618AD880F00F75847 /* UIKit.framework */; };
@@ -38,12 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A03DF9A18C8D7F200F8C22A /* Background_temp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background_temp.jpg; sourceTree = "<group>"; };
 		7A0AC84018BC48C800E42C4E /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		7A0AC84118BC48C800E42C4E /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		7A0AC84218BC48C800E42C4E /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		7A2A905F18C646AB00510805 /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
 		7A2A906018C646AB00510805 /* MotionJpegImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MotionJpegImageView.mm; sourceTree = "<group>"; };
-		7AC6799018B6C79F005D0863 /* Background_temp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background_temp.jpg; sourceTree = "<group>"; };
 		7AC9CA2F18AD880F00F75847 /* Remote-Sentry-Gun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote-Sentry-Gun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC9CA3218AD880F00F75847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -159,7 +159,7 @@
 		7AC9CA3918AD880F00F75847 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AC6799018B6C79F005D0863 /* Background_temp.jpg */,
+				7A03DF9A18C8D7F200F8C22A /* Background_temp.jpg */,
 				7AC9CA3A18AD880F00F75847 /* Remote-Sentry-Gun-Info.plist */,
 				7AC9CA3B18AD880F00F75847 /* InfoPlist.strings */,
 				7AC9CA3E18AD880F00F75847 /* main.m */,
@@ -230,7 +230,7 @@
 		7AC9CA2718AD880F00F75847 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Project Sentry Gun";
 				TargetAttributes = {
 					7AC9CA2E18AD880F00F75847 = {
@@ -265,7 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC6799118B6C79F005D0863 /* Background_temp.jpg in Resources */,
+				7A03DF9B18C8D7F200F8C22A /* Background_temp.jpg in Resources */,
 				7AC9CA4918AD880F00F75847 /* Main_iPad.storyboard in Resources */,
 				7AC9CA4E18AD880F00F75847 /* Images.xcassets in Resources */,
 				7AC9CA4618AD880F00F75847 /* Main_iPhone.storyboard in Resources */,
@@ -354,7 +354,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -394,7 +393,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -459,7 +457,6 @@
 		7AC9CA6818AD880F00F75847 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Remote-Sentry-Gun.app/Remote-Sentry-Gun";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -482,7 +479,6 @@
 		7AC9CA6918AD880F00F75847 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Remote-Sentry-Gun.app/Remote-Sentry-Gun";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
