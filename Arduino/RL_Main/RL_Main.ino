@@ -6,7 +6,6 @@
 //  www.mukundt.com
 //  Copyright (c) 2014 Project Sentry Gun. All rights reserved.
 //
-// test
 
 #include <SPI.h>
 #include <boards.h>
