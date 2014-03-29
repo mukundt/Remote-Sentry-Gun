@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6D4F1F76-762C-4C15-87A1-14B0C9E84CCF</string>
+	<string>0EE2DBC3-43D1-4C0A-ABF4-7E4B92CB1873</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Remote Sentry Gun</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/mukundt/Remote-Sentry-Gun</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Remote Sentry Gun.xcodeproj/project.xcworkspace</string>
+	<string>iOS/Remote Sentry Gun.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DD025BC4-7558-49D7-83B2-38D556CA6256</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mukundt/Remote-Sentry-Gun</string>
