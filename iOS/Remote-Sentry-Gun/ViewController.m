@@ -166,7 +166,7 @@
 
 - (IBAction)startUp:(id)sender
 {
-    unsigned char toSend = 's'; //inverted up-down due to motor placement
+    unsigned char toSend = 'w';
     
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
     
@@ -177,7 +177,7 @@
 
 - (IBAction)startDown:(id)sender
 {
-    unsigned char toSend = 'w'; //inverted up-down due to motor placement
+    unsigned char toSend = 's';
     
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
     
