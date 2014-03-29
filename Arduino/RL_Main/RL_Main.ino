@@ -44,7 +44,7 @@ void setup() {
   ble_begin();
   
   //Temporary serial code - comment when done
-  Serial.begin(57600);
+  //Serial.begin(57600);
 }
 
 void loop() {
@@ -53,7 +53,7 @@ void loop() {
   //while (Serial.available())
   {
     char command = (char)ble_read();
-    Serial.println(command);
+    //Serial.println(command);
     switch (command)
     {
       case 'a': 
