@@ -99,12 +99,12 @@
 
 -(void) bleDidConnect
 {
-    self.RSG.backgroundColor = [UIColor greenColor];
+    self.RSG.textColor = [UIColor greenColor];
 }
 
 - (void) bleDidDisconnect
 {
-    self.RSG.backgroundColor = [UIColor redColor];
+    self.RSG.textColor = [UIColor redColor];
 }
 
 - (IBAction)startFire:(id)sender
@@ -208,8 +208,8 @@
     
     else
     {
-        unsigned char toSend = 'p';
-        //'p' for peace
+        unsigned char toSend = 'l';
+        //'l' for life
         
         NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
         
