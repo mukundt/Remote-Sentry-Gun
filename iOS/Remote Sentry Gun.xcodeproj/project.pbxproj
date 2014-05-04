@@ -14,7 +14,6 @@
 		7A43D5B71915DE2000DF0D22 /* down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A43D5B61915DE2000DF0D22 /* down_arrow.png */; };
 		7A43D5B91915DE6100DF0D22 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A43D5B81915DE6100DF0D22 /* right_arrow.png */; };
 		7A43D5BF1915DFF300DF0D22 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A43D5BE1915DFF300DF0D22 /* connect.png */; };
-		7A43D5C11915E4F400DF0D22 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A43D5C01915E4F400DF0D22 /* fire.png */; };
 		7AC9CA3318AD880F00F75847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3218AD880F00F75847 /* Foundation.framework */; };
 		7AC9CA3518AD880F00F75847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */; };
 		7AC9CA3718AD880F00F75847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3618AD880F00F75847 /* UIKit.framework */; };
@@ -30,6 +29,7 @@
 		7AC9CA5718AD880F00F75847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3618AD880F00F75847 /* UIKit.framework */; };
 		7AC9CA5F18AD880F00F75847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AC9CA5D18AD880F00F75847 /* InfoPlist.strings */; };
 		7AC9CA6118AD880F00F75847 /* Remote_Sentry_GunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */; };
+		7ADA4F4C1915E6E8008FF90A /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA4F4B1915E6E8008FF90A /* fire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,6 @@
 		7A43D5B61915DE2000DF0D22 /* down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow.png; sourceTree = "<group>"; };
 		7A43D5B81915DE6100DF0D22 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
 		7A43D5BE1915DFF300DF0D22 /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
-		7A43D5C01915E4F400DF0D22 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		7AC9CA2F18AD880F00F75847 /* Remote-Sentry-Gun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote-Sentry-Gun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC9CA3218AD880F00F75847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +73,7 @@
 		7AC9CA5C18AD880F00F75847 /* Remote-Sentry-GunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Remote-Sentry-GunTests-Info.plist"; sourceTree = "<group>"; };
 		7AC9CA5E18AD880F00F75847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remote_Sentry_GunTests.m; sourceTree = "<group>"; };
+		7ADA4F4B1915E6E8008FF90A /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +172,8 @@
 				7A43D5B61915DE2000DF0D22 /* down_arrow.png */,
 				7A43D5B81915DE6100DF0D22 /* right_arrow.png */,
 				7A43D5B41915DDAE00DF0D22 /* left_arrow.png */,
+				7ADA4F4B1915E6E8008FF90A /* fire.png */,
 				7A43D5B21915DC8000DF0D22 /* up_arrow.png */,
-				7A43D5C01915E4F400DF0D22 /* fire.png */,
 				7A43D5BE1915DFF300DF0D22 /* connect.png */,
 				7AC9CA3A18AD880F00F75847 /* Remote-Sentry-Gun-Info.plist */,
 				7AC9CA3B18AD880F00F75847 /* InfoPlist.strings */,
@@ -281,7 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A43D5B31915DC8000DF0D22 /* up_arrow.png in Resources */,
-				7A43D5C11915E4F400DF0D22 /* fire.png in Resources */,
+				7ADA4F4C1915E6E8008FF90A /* fire.png in Resources */,
 				7A43D5B91915DE6100DF0D22 /* right_arrow.png in Resources */,
 				7A43D5B51915DDAE00DF0D22 /* left_arrow.png in Resources */,
 				7A43D5B71915DE2000DF0D22 /* down_arrow.png in Resources */,
