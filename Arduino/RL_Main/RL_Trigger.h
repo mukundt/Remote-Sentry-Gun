@@ -1,7 +1,7 @@
 /*
   RL_Trigger.h - Library for triggering a BT TM7 paintball marker.
-  Version 1.0
-  Created by Bob Rudolph, February 24, 2014.
+  Version 1.1
+  Created by Bob Rudolph, April 28, 2014.
   Rudolph Labs:  http://www.rudolphlabs.com/
 */
 
