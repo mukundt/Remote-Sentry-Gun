@@ -88,6 +88,14 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MJE-oC-Twu">
+                                <rect key="frame" x="466" y="26" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="arm:" destination="vXZ-lx-hvc" eventType="valueChanged" id="xgW-Ua-i4e"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -97,6 +105,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="RSG" destination="Bg8-y0-x00" id="C3t-PQ-lGy"/>
+                        <outlet property="arm" destination="MJE-oC-Twu" id="een-G2-8IT"/>
                         <outlet property="buttonConnect" destination="GgN-9j-6FB" id="o57-t1-W2N"/>
                         <outlet property="buttonDown" destination="YwH-he-b05" id="H0I-tR-tT6"/>
                         <outlet property="buttonFire" destination="mLd-eh-FQE" id="hRr-2M-nZV"/>
@@ -112,11 +121,11 @@
     </scenes>
     <resources>
         <image name="connect.png" width="96" height="96"/>
-        <image name="down_arrow.png" width="128" height="128"/>
+        <image name="down_arrow.png" width="300" height="300"/>
         <image name="fire.png" width="300" height="300"/>
-        <image name="left_arrow.png" width="128" height="128"/>
-        <image name="right_arrow.png" width="128" height="128"/>
-        <image name="up_arrow.png" width="128" height="128"/>
+        <image name="left_arrow.png" width="300" height="300"/>
+        <image name="right_arrow.png" width="300" height="300"/>
+        <image name="up_arrow.png" width="300" height="300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

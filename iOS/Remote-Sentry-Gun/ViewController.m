@@ -194,5 +194,28 @@
     [bleShield write:data];
 }
 
+-(IBAction)arm:(id)sender
+{
+    if (self.arm.on)
+    {
+        unsigned char toSend = 'k';
+        //'k' for kill
+        
+        NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+        
+        [bleShield write:data];
+    }
+    
+    else
+    {
+        unsigned char toSend = 'p';
+        //'p' for peace
+        
+        NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+        
+        [bleShield write:data];
+    }
+}
+
 
 @end

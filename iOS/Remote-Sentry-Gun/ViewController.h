@@ -26,5 +26,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonUp;
 @property (weak, nonatomic) IBOutlet UIButton *buttonDown;
 @property (weak, nonatomic) IBOutlet UILabel *RSG;
+@property (nonatomic, retain) IBOutlet UISwitch *arm;
 
 @end
