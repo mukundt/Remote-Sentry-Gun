@@ -37,7 +37,7 @@
     webFrame.origin.x = 0.0;
     _webView.frame = webFrame;*/
     
-    NSURL *url = [NSURL URLWithString:@"http://admin:rudolphlabs@192.168.1.5/video/mjpg.cgi"];
+    NSURL *url = [NSURL URLWithString:@"http://admin:password@192.168.1.5/video/mjpg.cgi"];
     //NSURL *url = [NSURL URLWithString:@"http://shibuya.ipcam.jp:60001/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -99,13 +99,12 @@
 
 -(void) bleDidConnect
 {
-    [self.spinner stopAnimating];
-    [self.buttonConnect setTitle:@"Disconnect" forState:UIControlStateNormal];
+    self.RSG.backgroundColor = [UIColor greenColor];
 }
 
 - (void) bleDidDisconnect
 {
-    [self.buttonConnect setTitle:@"Connect" forState:UIControlStateNormal];
+    self.RSG.backgroundColor = [UIColor redColor];
 }
 
 - (IBAction)startFire:(id)sender
