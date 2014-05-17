@@ -20,31 +20,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-   /* UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background_temp.jpg"]];
-    [self.view addSubview:backgroundView];
-    [self.view sendSubviewToBack:backgroundView]; */
-    
-    //self.view.backgroundColor = [UIColor greenColor];
-    
-   /* _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0,0.0,640.0,480.0)];
-    _webView.userInteractionEnabled = NO;
-    CGFloat scaleRatio = self.view.bounds.size.width / _webView.bounds.size.width;
-    CGAffineTransform scalingTransform =
-    CGAffineTransformScale(CGAffineTransformIdentity, scaleRatio, scaleRatio);
-    [_webView setTransform:scalingTransform];
-    CGRect webFrame = _webView.frame;
-    webFrame.origin.y = 0.0;
-    webFrame.origin.x = 0.0;
-    _webView.frame = webFrame;*/
-    
     NSURL *url = [NSURL URLWithString:@"http://admin:password@192.168.1.5/video/mjpg.cgi"];
     //NSURL *url = [NSURL URLWithString:@"http://shibuya.ipcam.jp:60001/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [_webView loadRequest:request];
-    //  [self.window addSubview:_webView];
-    
-  //  webFrame.origin.y += webFrame.size.height;
     _imageView = [[MotionJpegImageView alloc] initWithFrame:CGRectMake(self.view.frame.origin.y, self.view.frame.origin.x,
 [[UIScreen mainScreen] bounds].size.height,[[UIScreen mainScreen] bounds].size.width)];
     _imageView.url = url;
@@ -80,7 +58,6 @@
     
     [NSTimer scheduledTimerWithTimeInterval:(float)3.0 target:self selector:@selector(connectionTimer:) userInfo:nil repeats:NO];
     
-    [self.spinner startAnimating];
 }
 
 
@@ -90,10 +67,6 @@
     if(bleShield.peripherals.count > 0)
     {
         [bleShield connectPeripheral:[bleShield.peripherals objectAtIndex:0]];
-    }
-    else
-    {
-        [self.spinner stopAnimating];
     }
 }
 

@@ -15,10 +15,8 @@
     BLE *bleShield;
 @private
     MotionJpegImageView *_imageView;
-    UIWebView *_webView;
 }
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIButton *buttonConnect;
 @property (weak, nonatomic) IBOutlet UIButton *buttonFire;
 @property (weak, nonatomic) IBOutlet UIButton *buttonLeft;

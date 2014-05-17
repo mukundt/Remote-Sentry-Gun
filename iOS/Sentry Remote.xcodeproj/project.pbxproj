@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AA759361926D8890040E860 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA759351926D8890040E860 /* Foundation.framework */; };
+		7AA759381926D8890040E860 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA759371926D8890040E860 /* CoreGraphics.framework */; };
+		7AA7593A1926D8890040E860 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA759391926D8890040E860 /* UIKit.framework */; };
+		7AA759401926D88A0040E860 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7593E1926D88A0040E860 /* InfoPlist.strings */; };
+		7AA759421926D88A0040E860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA759411926D88A0040E860 /* main.m */; };
+		7AA759461926D88A0040E860 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA759451926D88A0040E860 /* AppDelegate.m */; };
+		7AA759491926D88A0040E860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA759471926D88A0040E860 /* Main.storyboard */; };
+		7AA7594C1926D88A0040E860 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7594B1926D88A0040E860 /* ViewController.m */; };
+		7AA7594E1926D88B0040E860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7594D1926D88B0040E860 /* Images.xcassets */; };
+		7AA759551926D88B0040E860 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA759541926D88B0040E860 /* XCTest.framework */; };
+		7AA759561926D88B0040E860 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA759351926D8890040E860 /* Foundation.framework */; };
+		7AA759571926D88B0040E860 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA759391926D8890040E860 /* UIKit.framework */; };
+		7AA7595F1926D88B0040E860 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7595D1926D88B0040E860 /* InfoPlist.strings */; };
+		7AA759611926D88B0040E860 /* Sentry_RemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA759601926D88B0040E860 /* Sentry_RemoteTests.m */; };
+		7AA759721926D9740040E860 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7596A1926D9740040E860 /* Background.png */; };
+		7AA759731926D9740040E860 /* Button_Bluetooth_Connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7596B1926D9740040E860 /* Button_Bluetooth_Connect.png */; };
+		7AA759741926D9740040E860 /* Button_Bluetooth_Disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7596C1926D9740040E860 /* Button_Bluetooth_Disconnect.png */; };
+		7AA759751926D9740040E860 /* Button_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7596D1926D9740040E860 /* Button_Disable.png */; };
+		7AA759761926D9740040E860 /* Button_Enable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7596E1926D9740040E860 /* Button_Enable.png */; };
+		7AA759771926D9740040E860 /* Indicator_Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA7596F1926D9740040E860 /* Indicator_Disabled.png */; };
+		7AA759781926D9740040E860 /* Indicator_Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA759701926D9740040E860 /* Indicator_Enabled.png */; };
+		7AA759831926DCEB0040E860 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA759811926DCEB0040E860 /* BLE.m */; };
+		7AA759851926E1640040E860 /* SplashScreen_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA759841926E1640040E860 /* SplashScreen_01.png */; };
+		7AA759871926E16B0040E860 /* AppIcon_01_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA759861926E16B0040E860 /* AppIcon_01_120x120.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AA759581926D88B0040E860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AA7592A1926D8880040E860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA759311926D8890040E860;
+			remoteInfo = "Sentry Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AA759321926D8890040E860 /* Sentry Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sentry Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA759351926D8890040E860 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7AA759371926D8890040E860 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7AA759391926D8890040E860 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7AA7593D1926D8890040E860 /* Sentry Remote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sentry Remote-Info.plist"; sourceTree = "<group>"; };
+		7AA7593F1926D88A0040E860 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AA759411926D88A0040E860 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AA759431926D88A0040E860 /* Sentry Remote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sentry Remote-Prefix.pch"; sourceTree = "<group>"; };
+		7AA759441926D88A0040E860 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7AA759451926D88A0040E860 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7AA759481926D88A0040E860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AA7594A1926D88A0040E860 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7AA7594B1926D88A0040E860 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7AA7594D1926D88B0040E860 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7AA759531926D88B0040E860 /* Sentry RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sentry RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA759541926D88B0040E860 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7AA7595C1926D88B0040E860 /* Sentry RemoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sentry RemoteTests-Info.plist"; sourceTree = "<group>"; };
+		7AA7595E1926D88B0040E860 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AA759601926D88B0040E860 /* Sentry_RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sentry_RemoteTests.m; sourceTree = "<group>"; };
+		7AA7596A1926D9740040E860 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		7AA7596B1926D9740040E860 /* Button_Bluetooth_Connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Bluetooth_Connect.png; sourceTree = "<group>"; };
+		7AA7596C1926D9740040E860 /* Button_Bluetooth_Disconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Bluetooth_Disconnect.png; sourceTree = "<group>"; };
+		7AA7596D1926D9740040E860 /* Button_Disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Disable.png; sourceTree = "<group>"; };
+		7AA7596E1926D9740040E860 /* Button_Enable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Enable.png; sourceTree = "<group>"; };
+		7AA7596F1926D9740040E860 /* Indicator_Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Indicator_Disabled.png; sourceTree = "<group>"; };
+		7AA759701926D9740040E860 /* Indicator_Enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Indicator_Enabled.png; sourceTree = "<group>"; };
+		7AA759801926DCEB0040E860 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		7AA759811926DCEB0040E860 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		7AA759821926DCEB0040E860 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		7AA759841926E1640040E860 /* SplashScreen_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen_01.png; sourceTree = "<group>"; };
+		7AA759861926E16B0040E860 /* AppIcon_01_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon_01_120x120.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AA7592F1926D8890040E860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA759381926D8890040E860 /* CoreGraphics.framework in Frameworks */,
+				7AA7593A1926D8890040E860 /* UIKit.framework in Frameworks */,
+				7AA759361926D8890040E860 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA759501926D88B0040E860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA759551926D88B0040E860 /* XCTest.framework in Frameworks */,
+				7AA759571926D88B0040E860 /* UIKit.framework in Frameworks */,
+				7AA759561926D88B0040E860 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AA759291926D8880040E860 = {
+			isa = PBXGroup;
+			children = (
+				7AA7593B1926D8890040E860 /* Sentry Remote */,
+				7AA7595A1926D88B0040E860 /* Sentry RemoteTests */,
+				7AA759341926D8890040E860 /* Frameworks */,
+				7AA759331926D8890040E860 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AA759331926D8890040E860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AA759321926D8890040E860 /* Sentry Remote.app */,
+				7AA759531926D88B0040E860 /* Sentry RemoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AA759341926D8890040E860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AA7597F1926DCEB0040E860 /* BLE */,
+				7AA759351926D8890040E860 /* Foundation.framework */,
+				7AA759371926D8890040E860 /* CoreGraphics.framework */,
+				7AA759391926D8890040E860 /* UIKit.framework */,
+				7AA759541926D88B0040E860 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AA7593B1926D8890040E860 /* Sentry Remote */ = {
+			isa = PBXGroup;
+			children = (
+				7AA759441926D88A0040E860 /* AppDelegate.h */,
+				7AA759451926D88A0040E860 /* AppDelegate.m */,
+				7AA759471926D88A0040E860 /* Main.storyboard */,
+				7AA7594A1926D88A0040E860 /* ViewController.h */,
+				7AA7594B1926D88A0040E860 /* ViewController.m */,
+				7AA7594D1926D88B0040E860 /* Images.xcassets */,
+				7AA7593C1926D8890040E860 /* Supporting Files */,
+			);
+			path = "Sentry Remote";
+			sourceTree = "<group>";
+		};
+		7AA7593C1926D8890040E860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AA759861926E16B0040E860 /* AppIcon_01_120x120.png */,
+				7AA759841926E1640040E860 /* SplashScreen_01.png */,
+				7AA7596A1926D9740040E860 /* Background.png */,
+				7AA7596B1926D9740040E860 /* Button_Bluetooth_Connect.png */,
+				7AA7596C1926D9740040E860 /* Button_Bluetooth_Disconnect.png */,
+				7AA7596D1926D9740040E860 /* Button_Disable.png */,
+				7AA7596E1926D9740040E860 /* Button_Enable.png */,
+				7AA7596F1926D9740040E860 /* Indicator_Disabled.png */,
+				7AA759701926D9740040E860 /* Indicator_Enabled.png */,
+				7AA7593D1926D8890040E860 /* Sentry Remote-Info.plist */,
+				7AA7593E1926D88A0040E860 /* InfoPlist.strings */,
+				7AA759411926D88A0040E860 /* main.m */,
+				7AA759431926D88A0040E860 /* Sentry Remote-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AA7595A1926D88B0040E860 /* Sentry RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AA759601926D88B0040E860 /* Sentry_RemoteTests.m */,
+				7AA7595B1926D88B0040E860 /* Supporting Files */,
+			);
+			path = "Sentry RemoteTests";
+			sourceTree = "<group>";
+		};
+		7AA7595B1926D88B0040E860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AA7595C1926D88B0040E860 /* Sentry RemoteTests-Info.plist */,
+				7AA7595D1926D88B0040E860 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AA7597F1926DCEB0040E860 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				7AA759801926DCEB0040E860 /* BLE.h */,
+				7AA759811926DCEB0040E860 /* BLE.m */,
+				7AA759821926DCEB0040E860 /* BLEDefines.h */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AA759311926D8890040E860 /* Sentry Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA759641926D88B0040E860 /* Build configuration list for PBXNativeTarget "Sentry Remote" */;
+			buildPhases = (
+				7AA7592E1926D8890040E860 /* Sources */,
+				7AA7592F1926D8890040E860 /* Frameworks */,
+				7AA759301926D8890040E860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sentry Remote";
+			productName = "Sentry Remote";
+			productReference = 7AA759321926D8890040E860 /* Sentry Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AA759521926D88B0040E860 /* Sentry RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA759671926D88B0040E860 /* Build configuration list for PBXNativeTarget "Sentry RemoteTests" */;
+			buildPhases = (
+				7AA7594F1926D88B0040E860 /* Sources */,
+				7AA759501926D88B0040E860 /* Frameworks */,
+				7AA759511926D88B0040E860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AA759591926D88B0040E860 /* PBXTargetDependency */,
+			);
+			name = "Sentry RemoteTests";
+			productName = "Sentry RemoteTests";
+			productReference = 7AA759531926D88B0040E860 /* Sentry RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AA7592A1926D8880040E860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Project Sentry Gun";
+				TargetAttributes = {
+					7AA759311926D8890040E860 = {
+						DevelopmentTeam = 2P6XS46L68;
+					};
+					7AA759521926D88B0040E860 = {
+						TestTargetID = 7AA759311926D8890040E860;
+					};
+				};
+			};
+			buildConfigurationList = 7AA7592D1926D8890040E860 /* Build configuration list for PBXProject "Sentry Remote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AA759291926D8880040E860;
+			productRefGroup = 7AA759331926D8890040E860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AA759311926D8890040E860 /* Sentry Remote */,
+				7AA759521926D88B0040E860 /* Sentry RemoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AA759301926D8890040E860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA759871926E16B0040E860 /* AppIcon_01_120x120.png in Resources */,
+				7AA7594E1926D88B0040E860 /* Images.xcassets in Resources */,
+				7AA759731926D9740040E860 /* Button_Bluetooth_Connect.png in Resources */,
+				7AA759721926D9740040E860 /* Background.png in Resources */,
+				7AA759401926D88A0040E860 /* InfoPlist.strings in Resources */,
+				7AA759751926D9740040E860 /* Button_Disable.png in Resources */,
+				7AA759771926D9740040E860 /* Indicator_Disabled.png in Resources */,
+				7AA759741926D9740040E860 /* Button_Bluetooth_Disconnect.png in Resources */,
+				7AA759761926D9740040E860 /* Button_Enable.png in Resources */,
+				7AA759851926E1640040E860 /* SplashScreen_01.png in Resources */,
+				7AA759491926D88A0040E860 /* Main.storyboard in Resources */,
+				7AA759781926D9740040E860 /* Indicator_Enabled.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA759511926D88B0040E860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA7595F1926D88B0040E860 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AA7592E1926D8890040E860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA7594C1926D88A0040E860 /* ViewController.m in Sources */,
+				7AA759461926D88A0040E860 /* AppDelegate.m in Sources */,
+				7AA759421926D88A0040E860 /* main.m in Sources */,
+				7AA759831926DCEB0040E860 /* BLE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA7594F1926D88B0040E860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA759611926D88B0040E860 /* Sentry_RemoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AA759591926D88B0040E860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AA759311926D8890040E860 /* Sentry Remote */;
+			targetProxy = 7AA759581926D88B0040E860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7AA7593E1926D88A0040E860 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA7593F1926D88A0040E860 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7AA759471926D88A0040E860 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA759481926D88A0040E860 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AA7595D1926D88B0040E860 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA7595E1926D88B0040E860 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AA759621926D88B0040E860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7AA759631926D88B0040E860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AA759651926D88B0040E860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sentry Remote/Sentry Remote-Prefix.pch";
+				INFOPLIST_FILE = "Sentry Remote/Sentry Remote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7AA759661926D88B0040E860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sentry Remote/Sentry Remote-Prefix.pch";
+				INFOPLIST_FILE = "Sentry Remote/Sentry Remote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7AA759681926D88B0040E860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sentry Remote.app/Sentry Remote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sentry Remote/Sentry Remote-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sentry RemoteTests/Sentry RemoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7AA759691926D88B0040E860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sentry Remote.app/Sentry Remote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sentry Remote/Sentry Remote-Prefix.pch";
+				INFOPLIST_FILE = "Sentry RemoteTests/Sentry RemoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AA7592D1926D8890040E860 /* Build configuration list for PBXProject "Sentry Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA759621926D88B0040E860 /* Debug */,
+				7AA759631926D88B0040E860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA759641926D88B0040E860 /* Build configuration list for PBXNativeTarget "Sentry Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA759651926D88B0040E860 /* Debug */,
+				7AA759661926D88B0040E860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA759671926D88B0040E860 /* Build configuration list for PBXNativeTarget "Sentry RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA759681926D88B0040E860 /* Debug */,
+				7AA759691926D88B0040E860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AA7592A1926D8880040E860 /* Project object */;
+}

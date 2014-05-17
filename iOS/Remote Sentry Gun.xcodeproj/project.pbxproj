@@ -10,6 +10,7 @@
 		7A0AC84318BC48C800E42C4E /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AC84118BC48C800E42C4E /* BLE.m */; };
 		7A2A906118C646AB00510805 /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A906018C646AB00510805 /* MotionJpegImageView.mm */; };
 		7A43D5BF1915DFF300DF0D22 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A43D5BE1915DFF300DF0D22 /* connect.png */; };
+		7A61D42119206EAC007C8241 /* SplashScreen_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A61D42019206EAC007C8241 /* SplashScreen_01.png */; };
 		7AB57FB81915FADE0078BFD1 /* up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB57FB71915FADE0078BFD1 /* up_arrow.png */; };
 		7AB57FBA1915FAF20078BFD1 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB57FB91915FAF20078BFD1 /* left_arrow.png */; };
 		7AB57FBC1915FB470078BFD1 /* down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB57FBB1915FB470078BFD1 /* down_arrow.png */; };
@@ -49,6 +50,7 @@
 		7A2A905F18C646AB00510805 /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
 		7A2A906018C646AB00510805 /* MotionJpegImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MotionJpegImageView.mm; sourceTree = "<group>"; };
 		7A43D5BE1915DFF300DF0D22 /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
+		7A61D42019206EAC007C8241 /* SplashScreen_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen_01.png; sourceTree = "<group>"; };
 		7AB57FB71915FADE0078BFD1 /* up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow.png; sourceTree = "<group>"; };
 		7AB57FB91915FAF20078BFD1 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
 		7AB57FBB1915FB470078BFD1 /* down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow.png; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		7AC9CA3918AD880F00F75847 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7A61D42019206EAC007C8241 /* SplashScreen_01.png */,
 				7ADA4F4B1915E6E8008FF90A /* fire.png */,
 				7AB57FB91915FAF20078BFD1 /* left_arrow.png */,
 				7AB57FBB1915FB470078BFD1 /* down_arrow.png */,
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB57FB81915FADE0078BFD1 /* up_arrow.png in Resources */,
+				7A61D42119206EAC007C8241 /* SplashScreen_01.png in Resources */,
 				7ADA4F4C1915E6E8008FF90A /* fire.png in Resources */,
 				7A43D5BF1915DFF300DF0D22 /* connect.png in Resources */,
 				7AC9CA4918AD880F00F75847 /* Main_iPad.storyboard in Resources */,
@@ -446,7 +450,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Remote-Sentry-Gun/Remote-Sentry-Gun-Prefix.pch";
@@ -462,7 +465,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Remote-Sentry-Gun/Remote-Sentry-Gun-Prefix.pch";
