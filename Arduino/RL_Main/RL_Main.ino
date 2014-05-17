@@ -24,6 +24,10 @@
 
 #define trigger_pin 14
 
+#define PIN_POWER A1    // A1
+#define PIN_SAFETY_A 16 // A2, blue
+#define PIN_SAFETY_B 17 // A3, green
+
 #define step_amount 10
 
 Stepper pan(pan_step_pin, pan_direction_pin, pan_enable_pin);
@@ -34,15 +38,23 @@ boolean pan_left, pan_right;
 boolean tilt_up, tilt_down;
 boolean trigger_on;
 
+boolean gun_armed = false;
+
 void setup() {
-   
+  pinMode(PIN_POWER, OUTPUT);
+  pinMode(PIN_SAFETY_A, OUTPUT);
+  pinMode(PIN_SAFETY_B, OUTPUT);
+  
+  digitalWrite(PIN_POWER, LOW);
+  safety_on();
+  
   pan.enable();
   tilt.enable();
  
   pan_left = pan_right = tilt_up = tilt_down = trigger_on = false; 
   
   ble_begin();
-  
+
   //Temporary serial code - comment when done
   //Serial.begin(57600);
 }
@@ -80,6 +92,24 @@ void loop() {
       case 'n':
         trigger_on = false;
         break;
+      case 'k':
+        if (!gun_armed) {
+          power_toggle();
+          delay(1000);
+          safety_off();
+          delay(1000);
+          gun_armed = true;
+        }
+        break;
+      case 'l':
+        if (gun_armed) {
+          safety_on();
+          delay(1000);
+          power_toggle();
+          delay(1000);
+          gun_armed = false;
+        }
+        break;
       default: 
         break;
     }
@@ -93,4 +123,21 @@ void loop() {
   else if (trigger_on) trigger.single_shot();
 
   ble_do_events();
+}
+
+void power_toggle() {
+  digitalWrite(PIN_POWER, HIGH);
+  delay(4000);
+  digitalWrite(PIN_POWER, LOW);
+  delay(500);
+}
+
+void safety_off() {
+  digitalWrite(PIN_SAFETY_A, HIGH);
+  digitalWrite(PIN_SAFETY_B, LOW);
+}
+
+void safety_on() {
+  digitalWrite(PIN_SAFETY_A, HIGH);
+  digitalWrite(PIN_SAFETY_B, HIGH);
 }
