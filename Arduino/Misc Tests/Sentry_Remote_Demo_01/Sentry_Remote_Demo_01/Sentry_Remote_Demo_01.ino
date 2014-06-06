@@ -14,21 +14,21 @@
 #include "RL_Stepper.h"
 #include "RL_Trigger.h"
 
-#define pan_step_pin 14
-#define pan_direction_pin 15
-#define pan_enable_pin 16
+#define pan_step_pin 2
+#define pan_direction_pin 3
+#define pan_enable_pin 4
 
-#define tilt_step_pin 17
-#define tilt_direction_pin 18
-#define tilt_enable_pin 19
+#define tilt_step_pin 5
+#define tilt_direction_pin 6
+#define tilt_enable_pin 7
 
-#define trigger_pin 7   // purple
+#define trigger_pin 14
 
-#define PIN_POWER 4    // red & yellow
-#define PIN_SAFETY_A 5 // blue
-#define PIN_SAFETY_B 6 // green
+#define PIN_POWER A1    // A1
+#define PIN_SAFETY_A 16 // A2, blue
+#define PIN_SAFETY_B 17 // A3, green
 
-#define step_amount 1
+#define step_amount 10
 
 Stepper pan(pan_step_pin, pan_direction_pin, pan_enable_pin);
 Stepper tilt(tilt_step_pin, tilt_direction_pin, tilt_enable_pin);

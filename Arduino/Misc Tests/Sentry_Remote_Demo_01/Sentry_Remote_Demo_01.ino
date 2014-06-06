@@ -34,11 +34,9 @@ Stepper pan(pan_step_pin, pan_direction_pin, pan_enable_pin);
 Stepper tilt(tilt_step_pin, tilt_direction_pin, tilt_enable_pin);
 Trigger trigger(trigger_pin);
 
-boolean pan_left, pan_right;
-boolean tilt_up, tilt_down;
-boolean trigger_on;
-
 boolean gun_armed = false;
+
+unsigned long start_time = millis();
 
 void setup() {
   pinMode(PIN_POWER, OUTPUT);
@@ -51,8 +49,6 @@ void setup() {
   pan.enable();
   tilt.enable();
  
-  pan_left = pan_right = tilt_up = tilt_down = trigger_on = false; 
-  
   ble_begin();
 
   //Temporary serial code - comment when done
@@ -68,60 +64,29 @@ void loop() {
     //Serial.println(command);
     switch (command)
     {
-      case 'a': 
-        pan_left = true; 
-        break;
-      case 'd': 
-        pan_right = true;
-        break;
-      case 'p': 
-        pan_left = pan_right = false;
-        break;
-      case 'w': 
-        tilt_up = true;
-        break;
-      case 's': 
-        tilt_down = true;
-        break;
-      case 't': 
-        tilt_up = tilt_down = false;
-        break;
-      case 'f':
-        trigger_on = true;
-        break;
-      case 'n':
-        trigger_on = false;
-        break;
       case 'k':
-        if (!gun_armed) {
-          power_toggle();
-          delay(1000);
-          safety_off();
-          delay(1000);
-          gun_armed = true;
-        }
+        gun_armed = true;
+        tilt.move_absolute(0);
+        start_time = millis();
         break;
       case 'l':
-        if (gun_armed) {
-          safety_on();
-          delay(1000);
-          power_toggle();
-          delay(1000);
-          gun_armed = false;
-        }
+        gun_armed = false;
+        tilt.move_absolute(0);
+        start_time = millis();
         break;
       default: 
         break;
     }
   }
   
-  //sends relevant command every clock cycle
-  if (pan_left) pan.move_relative(step_amount);
-  else if (pan_right) pan.move_relative(-step_amount);
-  else if (tilt_up) tilt.move_relative(step_amount);
-  else if (tilt_down) tilt.move_relative(-step_amount);
-  else if (trigger_on) trigger.single_shot();
-
+  if (gun_armed) {
+    if ((millis()-start_time) % 12000 < 3000 || (millis()-start_time) % 12000 >= 9000) {
+      tilt.move_relative(step_amount);
+    }else{
+      tilt.move_relative(-step_amount);
+    }
+  }
+  
   ble_do_events();
 }
 
