@@ -50,7 +50,7 @@
                                     <action selector="disarm:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gk0-LE-srB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Indicator_Enabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZq-ic-V8s">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Indicator_Disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZq-ic-V8s">
                                 <rect key="frame" x="35" y="111" width="250" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -73,7 +73,7 @@
         <image name="Button_Bluetooth_Connect.png" width="286" height="77"/>
         <image name="Button_Disable.png" width="480" height="198"/>
         <image name="Button_Enable.png" width="480" height="198"/>
-        <image name="Indicator_Enabled.png" width="484" height="160"/>
+        <image name="Indicator_Disabled.png" width="484" height="160"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

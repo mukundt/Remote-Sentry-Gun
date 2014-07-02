@@ -72,12 +72,14 @@
 
 -(void) bleDidConnect
 {
-    self.RSG.textColor = [UIColor greenColor];
+    UIImage *btnImage = [UIImage imageNamed:@"disconnect.png"];
+    [self.buttonConnect setImage:btnImage forState:UIControlStateNormal];
 }
 
 - (void) bleDidDisconnect
 {
-    self.RSG.textColor = [UIColor redColor];
+    UIImage *btnImage = [UIImage imageNamed:@"connect.png"];
+    [self.buttonConnect setImage:btnImage forState:UIControlStateNormal];
 }
 
 - (IBAction)startFire:(id)sender

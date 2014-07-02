@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		7A0AC84318BC48C800E42C4E /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AC84118BC48C800E42C4E /* BLE.m */; };
 		7A2A906118C646AB00510805 /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A906018C646AB00510805 /* MotionJpegImageView.mm */; };
-		7A43D5BF1915DFF300DF0D22 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A43D5BE1915DFF300DF0D22 /* connect.png */; };
-		7A61D42119206EAC007C8241 /* SplashScreen_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A61D42019206EAC007C8241 /* SplashScreen_01.png */; };
+		7A5CE13C19648E3E0036DBDA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE13B19648E3E0036DBDA /* Default-568h@2x.png */; };
+		7A5CE14019648EB20036DBDA /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE13F19648EB20036DBDA /* fire.png */; };
+		7A5CE14219648F9B0036DBDA /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE14119648F9B0036DBDA /* connect.png */; };
+		7A5CE14419648FA80036DBDA /* disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE14319648FA80036DBDA /* disconnect.png */; };
+		7A5CE146196492050036DBDA /* rsg_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE145196492050036DBDA /* rsg_text.png */; };
+		7A61D42119206EAC007C8241 /* splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A61D42019206EAC007C8241 /* splash_screen.png */; };
 		7AB57FB81915FADE0078BFD1 /* up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB57FB71915FADE0078BFD1 /* up_arrow.png */; };
 		7AB57FBA1915FAF20078BFD1 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB57FB91915FAF20078BFD1 /* left_arrow.png */; };
 		7AB57FBC1915FB470078BFD1 /* down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB57FBB1915FB470078BFD1 /* down_arrow.png */; };
@@ -30,7 +34,6 @@
 		7AC9CA5718AD880F00F75847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3618AD880F00F75847 /* UIKit.framework */; };
 		7AC9CA5F18AD880F00F75847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AC9CA5D18AD880F00F75847 /* InfoPlist.strings */; };
 		7AC9CA6118AD880F00F75847 /* Remote_Sentry_GunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */; };
-		7ADA4F4C1915E6E8008FF90A /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA4F4B1915E6E8008FF90A /* fire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +52,12 @@
 		7A0AC84218BC48C800E42C4E /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		7A2A905F18C646AB00510805 /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
 		7A2A906018C646AB00510805 /* MotionJpegImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MotionJpegImageView.mm; sourceTree = "<group>"; };
-		7A43D5BE1915DFF300DF0D22 /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
-		7A61D42019206EAC007C8241 /* SplashScreen_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen_01.png; sourceTree = "<group>"; };
+		7A5CE13B19648E3E0036DBDA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7A5CE13F19648EB20036DBDA /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		7A5CE14119648F9B0036DBDA /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
+		7A5CE14319648FA80036DBDA /* disconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disconnect.png; sourceTree = "<group>"; };
+		7A5CE145196492050036DBDA /* rsg_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsg_text.png; sourceTree = "<group>"; };
+		7A61D42019206EAC007C8241 /* splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen.png; sourceTree = "<group>"; };
 		7AB57FB71915FADE0078BFD1 /* up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow.png; sourceTree = "<group>"; };
 		7AB57FB91915FAF20078BFD1 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
 		7AB57FBB1915FB470078BFD1 /* down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow.png; sourceTree = "<group>"; };
@@ -75,7 +82,6 @@
 		7AC9CA5C18AD880F00F75847 /* Remote-Sentry-GunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Remote-Sentry-GunTests-Info.plist"; sourceTree = "<group>"; };
 		7AC9CA5E18AD880F00F75847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remote_Sentry_GunTests.m; sourceTree = "<group>"; };
-		7ADA4F4B1915E6E8008FF90A /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 		7AC9CA2618AD880F00F75847 = {
 			isa = PBXGroup;
 			children = (
+				7A5CE13B19648E3E0036DBDA /* Default-568h@2x.png */,
 				7AC9CA3818AD880F00F75847 /* Remote-Sentry-Gun */,
 				7AC9CA5A18AD880F00F75847 /* Remote-Sentry-GunTests */,
 				7AC9CA3118AD880F00F75847 /* Frameworks */,
@@ -171,12 +178,14 @@
 		7AC9CA3918AD880F00F75847 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7A61D42019206EAC007C8241 /* SplashScreen_01.png */,
-				7ADA4F4B1915E6E8008FF90A /* fire.png */,
+				7A5CE145196492050036DBDA /* rsg_text.png */,
+				7A5CE14319648FA80036DBDA /* disconnect.png */,
+				7A5CE14119648F9B0036DBDA /* connect.png */,
+				7A61D42019206EAC007C8241 /* splash_screen.png */,
+				7A5CE13F19648EB20036DBDA /* fire.png */,
 				7AB57FB91915FAF20078BFD1 /* left_arrow.png */,
 				7AB57FBB1915FB470078BFD1 /* down_arrow.png */,
 				7AB57FBD1915FB530078BFD1 /* right_arrow.png */,
-				7A43D5BE1915DFF300DF0D22 /* connect.png */,
 				7AB57FB71915FADE0078BFD1 /* up_arrow.png */,
 				7AC9CA3A18AD880F00F75847 /* Remote-Sentry-Gun-Info.plist */,
 				7AC9CA3B18AD880F00F75847 /* InfoPlist.strings */,
@@ -284,16 +293,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB57FB81915FADE0078BFD1 /* up_arrow.png in Resources */,
-				7A61D42119206EAC007C8241 /* SplashScreen_01.png in Resources */,
-				7ADA4F4C1915E6E8008FF90A /* fire.png in Resources */,
-				7A43D5BF1915DFF300DF0D22 /* connect.png in Resources */,
+				7A61D42119206EAC007C8241 /* splash_screen.png in Resources */,
 				7AC9CA4918AD880F00F75847 /* Main_iPad.storyboard in Resources */,
+				7A5CE13C19648E3E0036DBDA /* Default-568h@2x.png in Resources */,
 				7AC9CA4E18AD880F00F75847 /* Images.xcassets in Resources */,
 				7AC9CA4618AD880F00F75847 /* Main_iPhone.storyboard in Resources */,
+				7A5CE14419648FA80036DBDA /* disconnect.png in Resources */,
 				7AB57FBA1915FAF20078BFD1 /* left_arrow.png in Resources */,
+				7A5CE14219648F9B0036DBDA /* connect.png in Resources */,
 				7AC9CA3D18AD880F00F75847 /* InfoPlist.strings in Resources */,
 				7AB57FBE1915FB530078BFD1 /* right_arrow.png in Resources */,
+				7A5CE14019648EB20036DBDA /* fire.png in Resources */,
 				7AB57FBC1915FB470078BFD1 /* down_arrow.png in Resources */,
+				7A5CE146196492050036DBDA /* rsg_text.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +466,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Remote-Sentry-Gun/Remote-Sentry-Gun-Prefix.pch";
 				INFOPLIST_FILE = "Remote-Sentry-Gun/Remote-Sentry-Gun-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -469,7 +481,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Remote-Sentry-Gun/Remote-Sentry-Gun-Prefix.pch";
 				INFOPLIST_FILE = "Remote-Sentry-Gun/Remote-Sentry-Gun-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
