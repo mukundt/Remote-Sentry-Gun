@@ -15,6 +15,7 @@
     BLE *bleShield;
 @private
     MotionJpegImageView *_imageView;
+    BOOL isEnabled;
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonConnect;
@@ -23,6 +24,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonRight;
 @property (weak, nonatomic) IBOutlet UIButton *buttonUp;
 @property (weak, nonatomic) IBOutlet UIButton *buttonDown;
-@property (nonatomic, retain) IBOutlet UISwitch *arm;
+@property (weak, nonatomic) IBOutlet UIButton *buttonEnable;
 
 @end

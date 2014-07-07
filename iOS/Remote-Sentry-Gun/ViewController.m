@@ -169,19 +169,9 @@
     [bleShield write:data];
 }
 
--(IBAction)arm:(id)sender
+-(IBAction)enableOrDisable:(id)sender
 {
-    if (self.arm.on)
-    {
-        unsigned char toSend = 'k';
-        //'k' for kill
-        
-        NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
-        
-        [bleShield write:data];
-    }
-    
-    else
+    if (isEnabled)
     {
         unsigned char toSend = 'l';
         //'l' for life
@@ -189,8 +179,28 @@
         NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
         
         [bleShield write:data];
+        
+        isEnabled = false;
+        
+        UIImage *btnImage = [UIImage imageNamed:@"enable.png"];
+        [self.buttonEnable setImage:btnImage forState:UIControlStateNormal];
+    }
+    
+    else
+    {
+        unsigned char toSend = 'k';
+        //'k' for kill
+        
+        NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
+        
+        [bleShield write:data];
+        
+        isEnabled = true;
+        
+        UIImage *btnImage = [UIImage imageNamed:@"disable.png"];
+        [self.buttonEnable setImage:btnImage forState:UIControlStateNormal];
+        
     }
 }
-
 
 @end
