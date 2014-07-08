@@ -26,6 +26,7 @@
     _imageView = [[MotionJpegImageView alloc] initWithFrame:CGRectMake(self.view.frame.origin.y, self.view.frame.origin.x,
 [[UIScreen mainScreen] bounds].size.height,[[UIScreen mainScreen] bounds].size.width)];
     _imageView.url = url;
+    _imageView.contentMode = UIViewContentModeScaleToFill;
     [self.view addSubview:_imageView];
     [self.view sendSubviewToBack:_imageView];
     [_imageView play];
