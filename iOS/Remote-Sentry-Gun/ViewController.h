@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "BLE.h"
 #import "MotionJpegImageView.h"
+#import <SpriteKit/SpriteKit.h>
+#import "JoystickScene.h"
+
 
 @interface ViewController : UIViewController <BLEDelegate> {
     BLE *bleShield;

@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="qqj-7F-wYU"/>
                         <viewControllerLayoutGuide type="bottom" id="YLO-f7-l0m"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -35,50 +35,6 @@
                                 <connections>
                                     <action selector="endFire:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dbe-UI-KQ5"/>
                                     <action selector="startFire:" destination="vXZ-lx-hvc" eventType="touchDown" id="Gwp-hv-3DH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nz2-BZ-sH0">
-                                <rect key="frame" x="436" y="142" width="52" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="up_arrow.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="endTilt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="m6h-0n-w54"/>
-                                    <action selector="startUp:" destination="vXZ-lx-hvc" eventType="touchDown" id="yV5-ca-Ovm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwH-he-b05">
-                                <rect key="frame" x="436" y="233" width="52" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="down_arrow.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="endTilt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Brj-YO-NAE"/>
-                                    <action selector="startDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="Vrr-pr-u7R"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVY-MQ-kIz">
-                                <rect key="frame" x="391" y="184" width="49" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="left_arrow.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="endPan:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="88w-p7-pgd"/>
-                                    <action selector="startLeft:" destination="vXZ-lx-hvc" eventType="touchDown" id="7Z1-kw-Z7R"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0V-9b-Hu5">
-                                <rect key="frame" x="483" y="184" width="49" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="right_arrow.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="endPan:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iyK-fz-fg3"/>
-                                    <action selector="startRight:" destination="vXZ-lx-hvc" eventType="touchDown" id="ELt-tF-QK0"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rsg_text.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sqz-bz-wVC">
@@ -104,12 +60,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="buttonConnect" destination="GgN-9j-6FB" id="o57-t1-W2N"/>
-                        <outlet property="buttonDown" destination="YwH-he-b05" id="H0I-tR-tT6"/>
                         <outlet property="buttonEnable" destination="Nfh-4P-eIF" id="fJo-tI-v8J"/>
                         <outlet property="buttonFire" destination="mLd-eh-FQE" id="hRr-2M-nZV"/>
-                        <outlet property="buttonLeft" destination="BVY-MQ-kIz" id="XzR-dk-vpG"/>
-                        <outlet property="buttonRight" destination="J0V-9b-Hu5" id="V8D-c6-i4M"/>
-                        <outlet property="buttonUp" destination="Nz2-BZ-sH0" id="efu-o8-NXO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -119,13 +71,9 @@
     </scenes>
     <resources>
         <image name="connect.png" width="306" height="117"/>
-        <image name="down_arrow.png" width="300" height="300"/>
         <image name="enable.png" width="263" height="117"/>
         <image name="fire.png" width="248" height="200"/>
-        <image name="left_arrow.png" width="300" height="300"/>
-        <image name="right_arrow.png" width="300" height="300"/>
         <image name="rsg_text.png" width="724" height="126"/>
-        <image name="up_arrow.png" width="300" height="300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

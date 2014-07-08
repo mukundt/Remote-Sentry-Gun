@@ -20,15 +20,23 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSURL *url = [NSURL URLWithString:@"http://admin:password@192.168.1.5/video/mjpg.cgi"];
-    //NSURL *url = [NSURL URLWithString:@"http://shibuya.ipcam.jp:60001/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
-    
+    /*//NSURL *url = [NSURL URLWithString:@"http://admin:password@192.168.1.5/video/mjpg.cgi"];
+    NSURL *url = [NSURL URLWithString:@"http://shibuya.ipcam.jp:60001/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
+
     _imageView = [[MotionJpegImageView alloc] initWithFrame:CGRectMake(self.view.frame.origin.y, self.view.frame.origin.x,
 [[UIScreen mainScreen] bounds].size.height,[[UIScreen mainScreen] bounds].size.width)];
     _imageView.url = url;
     [self.view addSubview:_imageView];
     [self.view sendSubviewToBack:_imageView];
-    [_imageView play];
+    [_imageView play];*/
+    
+    SKView *spriteView = (SKView *) self.view;
+    //spriteView.showsDrawCount = YES;
+    //spriteView.showsNodeCount = YES;
+    //spriteView.showsFPS = YES;
+    JoystickScene* joystick = [[JoystickScene alloc] initWithSize:CGSizeMake(768,1024)];
+    [spriteView presentScene: joystick];
+    [self.view bringSubviewToFront:spriteView];
     
     
     bleShield = [[BLE alloc] init];
