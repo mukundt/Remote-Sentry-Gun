@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7A0AC84318BC48C800E42C4E /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AC84118BC48C800E42C4E /* BLE.m */; };
+		7A26891E196BB2B600A7A1A2 /* splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A26891D196BB2B600A7A1A2 /* splash_screen.png */; };
+		7A268920196BB31900A7A1A2 /* splash_screen_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A26891F196BB31900A7A1A2 /* splash_screen_small.png */; };
 		7A2A906118C646AB00510805 /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A906018C646AB00510805 /* MotionJpegImageView.mm */; };
 		7A362067196B3C97000574A2 /* enable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A362066196B3C97000574A2 /* enable.png */; };
 		7A362069196B3CA4000574A2 /* disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A362068196B3CA4000574A2 /* disable.png */; };
@@ -16,7 +18,6 @@
 		7A5CE14219648F9B0036DBDA /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE14119648F9B0036DBDA /* connect.png */; };
 		7A5CE14419648FA80036DBDA /* disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE14319648FA80036DBDA /* disconnect.png */; };
 		7A5CE146196492050036DBDA /* rsg_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE145196492050036DBDA /* rsg_text.png */; };
-		7A61D42119206EAC007C8241 /* splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A61D42019206EAC007C8241 /* splash_screen.png */; };
 		7AAEB207196B472F0032AD30 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAEB206196B472E0032AD30 /* SpriteKit.framework */; };
 		7AAEB20B196B48950032AD30 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAEB20A196B48950032AD30 /* Joystick.m */; };
 		7AAEB20D196B48A40032AD30 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AAEB20C196B48A40032AD30 /* dpad.png */; };
@@ -53,6 +54,8 @@
 		7A0AC84018BC48C800E42C4E /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		7A0AC84118BC48C800E42C4E /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		7A0AC84218BC48C800E42C4E /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		7A26891D196BB2B600A7A1A2 /* splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen.png; sourceTree = "<group>"; };
+		7A26891F196BB31900A7A1A2 /* splash_screen_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen_small.png; sourceTree = "<group>"; };
 		7A2A905F18C646AB00510805 /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
 		7A2A906018C646AB00510805 /* MotionJpegImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MotionJpegImageView.mm; sourceTree = "<group>"; };
 		7A362066196B3C97000574A2 /* enable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enable.png; sourceTree = "<group>"; };
@@ -64,7 +67,6 @@
 		7A5CE145196492050036DBDA /* rsg_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsg_text.png; sourceTree = "<group>"; };
 		7A5CE264196497380036DBDA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7A5CE2661964973E0036DBDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7A61D42019206EAC007C8241 /* splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen.png; sourceTree = "<group>"; };
 		7AAEB206196B472E0032AD30 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7AAEB209196B48950032AD30 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		7AAEB20A196B48950032AD30 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
@@ -214,6 +216,8 @@
 		7AC9CA3918AD880F00F75847 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7A26891F196BB31900A7A1A2 /* splash_screen_small.png */,
+				7A26891D196BB2B600A7A1A2 /* splash_screen.png */,
 				7AAEB20E196B48B30032AD30 /* joystick.png */,
 				7AAEB20C196B48A40032AD30 /* dpad.png */,
 				7A362068196B3CA4000574A2 /* disable.png */,
@@ -221,7 +225,6 @@
 				7A5CE145196492050036DBDA /* rsg_text.png */,
 				7A5CE14319648FA80036DBDA /* disconnect.png */,
 				7A5CE14119648F9B0036DBDA /* connect.png */,
-				7A61D42019206EAC007C8241 /* splash_screen.png */,
 				7A5CE13F19648EB20036DBDA /* fire.png */,
 				7AC9CA3A18AD880F00F75847 /* Remote-Sentry-Gun-Info.plist */,
 				7AC9CA3B18AD880F00F75847 /* InfoPlist.strings */,
@@ -328,10 +331,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A61D42119206EAC007C8241 /* splash_screen.png in Resources */,
 				7AAEB20F196B48B30032AD30 /* joystick.png in Resources */,
 				7A362067196B3C97000574A2 /* enable.png in Resources */,
 				7AC9CA4918AD880F00F75847 /* Main_iPad.storyboard in Resources */,
+				7A268920196BB31900A7A1A2 /* splash_screen_small.png in Resources */,
 				7AC9CA4E18AD880F00F75847 /* Images.xcassets in Resources */,
 				7AC9CA4618AD880F00F75847 /* Main_iPhone.storyboard in Resources */,
 				7A5CE14419648FA80036DBDA /* disconnect.png in Resources */,
@@ -341,6 +344,7 @@
 				7A5CE14019648EB20036DBDA /* fire.png in Resources */,
 				7A36206B196B3FBB000574A2 /* Default-568h@2x.png in Resources */,
 				7AAEB20D196B48A40032AD30 /* dpad.png in Resources */,
+				7A26891E196BB2B600A7A1A2 /* splash_screen.png in Resources */,
 				7A5CE146196492050036DBDA /* rsg_text.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
