@@ -18,10 +18,7 @@
 		7A5CE14219648F9B0036DBDA /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE14119648F9B0036DBDA /* connect.png */; };
 		7A5CE14419648FA80036DBDA /* disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE14319648FA80036DBDA /* disconnect.png */; };
 		7A5CE146196492050036DBDA /* rsg_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE145196492050036DBDA /* rsg_text.png */; };
-		7AAEB207196B472F0032AD30 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAEB206196B472E0032AD30 /* SpriteKit.framework */; };
-		7AAEB20B196B48950032AD30 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAEB20A196B48950032AD30 /* Joystick.m */; };
 		7AAEB20D196B48A40032AD30 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AAEB20C196B48A40032AD30 /* dpad.png */; };
-		7AAEB20F196B48B30032AD30 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AAEB20E196B48B30032AD30 /* joystick.png */; };
 		7AC9CA3318AD880F00F75847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3218AD880F00F75847 /* Foundation.framework */; };
 		7AC9CA3518AD880F00F75847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */; };
 		7AC9CA3718AD880F00F75847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3618AD880F00F75847 /* UIKit.framework */; };
@@ -37,7 +34,8 @@
 		7AC9CA5718AD880F00F75847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9CA3618AD880F00F75847 /* UIKit.framework */; };
 		7AC9CA5F18AD880F00F75847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AC9CA5D18AD880F00F75847 /* InfoPlist.strings */; };
 		7AC9CA6118AD880F00F75847 /* Remote_Sentry_GunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */; };
-		7AE9DADE196B599A0040B09B /* JoystickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE9DADD196B599A0040B09B /* JoystickScene.m */; };
+		7ACA0598196C79AC00A2D110 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ACA0597196C79AC00A2D110 /* joystick.png */; };
+		7ACA05AB196C89AC00A2D110 /* MFLJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA05A7196C89AC00A2D110 /* MFLJoystick.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +66,7 @@
 		7A5CE264196497380036DBDA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7A5CE2661964973E0036DBDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7AAEB206196B472E0032AD30 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		7AAEB209196B48950032AD30 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
-		7AAEB20A196B48950032AD30 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
 		7AAEB20C196B48A40032AD30 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
-		7AAEB20E196B48B30032AD30 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
 		7AC9CA2F18AD880F00F75847 /* Remote-Sentry-Gun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote-Sentry-Gun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC9CA3218AD880F00F75847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AC9CA3418AD880F00F75847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,8 +87,9 @@
 		7AC9CA5C18AD880F00F75847 /* Remote-Sentry-GunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Remote-Sentry-GunTests-Info.plist"; sourceTree = "<group>"; };
 		7AC9CA5E18AD880F00F75847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remote_Sentry_GunTests.m; sourceTree = "<group>"; };
-		7AE9DADC196B599A0040B09B /* JoystickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoystickScene.h; sourceTree = "<group>"; };
-		7AE9DADD196B599A0040B09B /* JoystickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoystickScene.m; sourceTree = "<group>"; };
+		7ACA0597196C79AC00A2D110 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
+		7ACA05A6196C89AC00A2D110 /* MFLJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLJoystick.h; sourceTree = "<group>"; };
+		7ACA05A7196C89AC00A2D110 /* MFLJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLJoystick.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AAEB207196B472F0032AD30 /* SpriteKit.framework in Frameworks */,
 				7AC9CA3518AD880F00F75847 /* CoreGraphics.framework in Frameworks */,
 				7AC9CA3718AD880F00F75847 /* UIKit.framework in Frameworks */,
 				7AC9CA3318AD880F00F75847 /* Foundation.framework in Frameworks */,
@@ -145,20 +140,11 @@
 		7A5CEB6A1964AC760036DBDA /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				7AAEB208196B48860032AD30 /* Joystick */,
+				7ACA05A3196C89AC00A2D110 /* MFJoystick */,
 				7A2A905E18C646AB00510805 /* MotionJpegImageView */,
 				7A0AC83F18BC48C800E42C4E /* BLE */,
 			);
 			name = Libraries;
-			sourceTree = "<group>";
-		};
-		7AAEB208196B48860032AD30 /* Joystick */ = {
-			isa = PBXGroup;
-			children = (
-				7AAEB209196B48950032AD30 /* Joystick.h */,
-				7AAEB20A196B48950032AD30 /* Joystick.m */,
-			);
-			name = Joystick;
 			sourceTree = "<group>";
 		};
 		7AC9CA2618AD880F00F75847 = {
@@ -205,8 +191,6 @@
 				7AC9CA4718AD880F00F75847 /* Main_iPad.storyboard */,
 				7AC9CA4A18AD880F00F75847 /* ViewController.h */,
 				7AC9CA4B18AD880F00F75847 /* ViewController.m */,
-				7AE9DADC196B599A0040B09B /* JoystickScene.h */,
-				7AE9DADD196B599A0040B09B /* JoystickScene.m */,
 				7AC9CA4D18AD880F00F75847 /* Images.xcassets */,
 				7AC9CA3918AD880F00F75847 /* Supporting Files */,
 			);
@@ -216,10 +200,10 @@
 		7AC9CA3918AD880F00F75847 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7ACA0597196C79AC00A2D110 /* joystick.png */,
+				7AAEB20C196B48A40032AD30 /* dpad.png */,
 				7A26891F196BB31900A7A1A2 /* splash_screen_small.png */,
 				7A26891D196BB2B600A7A1A2 /* splash_screen.png */,
-				7AAEB20E196B48B30032AD30 /* joystick.png */,
-				7AAEB20C196B48A40032AD30 /* dpad.png */,
 				7A362068196B3CA4000574A2 /* disable.png */,
 				7A362066196B3C97000574A2 /* enable.png */,
 				7A5CE145196492050036DBDA /* rsg_text.png */,
@@ -250,6 +234,15 @@
 				7AC9CA5D18AD880F00F75847 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ACA05A3196C89AC00A2D110 /* MFJoystick */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA05A6196C89AC00A2D110 /* MFLJoystick.h */,
+				7ACA05A7196C89AC00A2D110 /* MFLJoystick.m */,
+			);
+			path = MFJoystick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,10 +324,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AAEB20F196B48B30032AD30 /* joystick.png in Resources */,
 				7A362067196B3C97000574A2 /* enable.png in Resources */,
 				7AC9CA4918AD880F00F75847 /* Main_iPad.storyboard in Resources */,
 				7A268920196BB31900A7A1A2 /* splash_screen_small.png in Resources */,
+				7ACA0598196C79AC00A2D110 /* joystick.png in Resources */,
 				7AC9CA4E18AD880F00F75847 /* Images.xcassets in Resources */,
 				7AC9CA4618AD880F00F75847 /* Main_iPhone.storyboard in Resources */,
 				7A5CE14419648FA80036DBDA /* disconnect.png in Resources */,
@@ -364,9 +357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACA05AB196C89AC00A2D110 /* MFLJoystick.m in Sources */,
 				7AC9CA4C18AD880F00F75847 /* ViewController.m in Sources */,
-				7AE9DADE196B599A0040B09B /* JoystickScene.m in Sources */,
-				7AAEB20B196B48950032AD30 /* Joystick.m in Sources */,
 				7AC9CA4318AD880F00F75847 /* AppDelegate.m in Sources */,
 				7A2A906118C646AB00510805 /* MotionJpegImageView.mm in Sources */,
 				7AC9CA3F18AD880F00F75847 /* main.m in Sources */,

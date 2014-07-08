@@ -9,7 +9,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <JoystickDelegate>
 
 @end
 
@@ -20,7 +20,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    /*//NSURL *url = [NSURL URLWithString:@"http://admin:password@192.168.1.5/video/mjpg.cgi"];
+    //NSURL *url = [NSURL URLWithString:@"http://admin:password@192.168.1.5/video/mjpg.cgi"];
     NSURL *url = [NSURL URLWithString:@"http://shibuya.ipcam.jp:60001/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
 
     _imageView = [[MotionJpegImageView alloc] initWithFrame:CGRectMake(self.view.frame.origin.y, self.view.frame.origin.x,
@@ -28,15 +28,13 @@
     _imageView.url = url;
     [self.view addSubview:_imageView];
     [self.view sendSubviewToBack:_imageView];
-    [_imageView play];*/
+    [_imageView play];
     
-    SKView *spriteView = (SKView *) self.view;
-    //spriteView.showsDrawCount = YES;
-    //spriteView.showsNodeCount = YES;
-    //spriteView.showsFPS = YES;
-    JoystickScene* joystick = [[JoystickScene alloc] initWithSize:CGSizeMake(768,1024)];
-    [spriteView presentScene: joystick];
-    [self.view bringSubviewToFront:spriteView];
+    MFLJoystick *joystick = [[MFLJoystick alloc] initWithFrame:CGRectMake(426, 165, 128, 128)];
+    [joystick setThumbImage:[UIImage imageNamed:@"joystick.png"]
+                 andBGImage:[UIImage imageNamed:@"dpad.png"]];
+    [joystick setDelegate:self];
+    [self.view addSubview:joystick];
     
     
     bleShield = [[BLE alloc] init];
@@ -88,6 +86,11 @@
 {
     UIImage *btnImage = [UIImage imageNamed:@"connect.png"];
     [self.buttonConnect setImage:btnImage forState:UIControlStateNormal];
+}
+
+- (void)joystick:(MFLJoystick *)aJoystick didUpdate:(CGPoint)dir
+{
+    NSLog(@"%@", NSStringFromCGPoint(dir));
 }
 
 - (IBAction)startFire:(id)sender
