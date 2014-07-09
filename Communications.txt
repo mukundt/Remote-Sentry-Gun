@@ -22,3 +22,4 @@ Communications Protocol
 '2' = Speed 2
 '3' = Speed 3
 '4' = Speed 4
+'5' = Speed 5
