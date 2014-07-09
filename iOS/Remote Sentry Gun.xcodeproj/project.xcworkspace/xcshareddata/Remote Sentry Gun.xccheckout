@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B1D3033A-3310-406A-8735-9B7D0D5FB6A2</string>
+	<string>F03575DF-8A75-4A22-8E53-BFBC180BF715</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Remote Sentry Gun</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A799389E-1FDF-4E64-AC18-D72DD4E3FB88</key>
-		<string>https://github.com/mukundt/Remote-Sentry-Gun.git</string>
+		<key>A041D26D-03E4-41D2-B504-B434B98E9FFB</key>
+		<string>https://github.com/mukundt/Remote-Sentry-Gun</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOS/Remote Sentry Gun.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A799389E-1FDF-4E64-AC18-D72DD4E3FB88</key>
+		<key>A041D26D-03E4-41D2-B504-B434B98E9FFB</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mukundt/Remote-Sentry-Gun.git</string>
+	<string>https://github.com/mukundt/Remote-Sentry-Gun</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A799389E-1FDF-4E64-AC18-D72DD4E3FB88</string>
+	<string>A041D26D-03E4-41D2-B504-B434B98E9FFB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A799389E-1FDF-4E64-AC18-D72DD4E3FB88</string>
+			<string>A041D26D-03E4-41D2-B504-B434B98E9FFB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Remote-Sentry-Gun</string>
 		</dict>

@@ -27,7 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
     //NSURL *url = [NSURL URLWithString:@"http://admin:password@192.168.1.5/video/mjpg.cgi"];
     NSURL *url = [NSURL URLWithString:@"http://shibuya.ipcam.jp:60001/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
@@ -44,6 +43,8 @@
     [joystick setThumbImage:[UIImage imageNamed:@"joystick.png"]
                  andBGImage:[UIImage imageNamed:@"dpad.png"]];
     [joystick setDelegate:self];
+    // Minimum 200 ms interval between packets
+    [joystick setMovementUpdateInterval:0.2];
     [self.view addSubview:joystick];
     
     
@@ -98,92 +99,71 @@
     [self.buttonConnect setImage:btnImage forState:UIControlStateNormal];
 }
 
+// Refer to communications protocol
 - (void)joystick:(MFLJoystick *)aJoystick didUpdate:(CGPoint)dir
 {
-    NSLog(@"%@", NSStringFromCGPoint(dir));
+    double rad = atan2(30 * dir.y, 30 * dir.x);
+    double deg = (rad > 0 ? rad : (2*M_PI + rad)) * 360 / (2*M_PI);
+
+    unsigned char quad = 'q';
+    
+    if (45 <= deg) quad = 'w';
+    
+    if (90 <= deg) quad = 'e';
+    
+    if (135 <= deg) quad = 'r';
+    
+    if (180 <= deg) quad = 't';
+    
+    if (225 <= deg) quad = 'y';
+    
+    if (270 <= deg) quad = 'u';
+    
+    if (315 <= deg) quad = 'i';
+    
+    double dist = sqrt(dir.x * dir.x + dir.y*dir.y);
+    
+    unsigned char speed = '0';
+    
+    if (dist > 0) speed = '1';
+    
+    if (dist > 0.1) speed = '2';
+    
+    if (dist > 0.2) speed = '3';
+    
+    if (dist > 0.3) speed = '4';
+    
+    if (dist > 0.4) speed = '5';
+    
+    [self sendMovement:quad withArg2:speed];
+}
+
+- (void)sendMovement:(unsigned char)quad withArg2:(unsigned char)speed
+{
+    NSLog(@"%c", quad);
+    NSLog(@"%c", speed);
+    
+    NSData *data = [NSData dataWithBytes: &quad length: sizeof(quad)];
+    
+    [bleShield write:data];
+    
+    data = [NSData dataWithBytes: &speed length: sizeof(speed)];
+    
+    [bleShield write:data];
 }
 
 - (IBAction)startFire:(id)sender
 {
-    //self.view.backgroundColor = [UIColor redColor];
-    
     unsigned char toSend = 'f';
     
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
     
     [bleShield write:data];
-    
-    //test this by printing rec'd char at Arduino's side
 }
 
 - (IBAction)endFire:(id)sender
 {
-    
-    //self.view.backgroundColor = [UIColor greenColor];
-    
     unsigned char toSend = 'n';
-    
-    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
-    
-    [bleShield write:data];
-}
-
-- (IBAction)startLeft:(id)sender
-{
-    unsigned char toSend = 'a';
-    
-    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
-    
-    [bleShield write:data];
-    
-    //test this by printing rec'd char at Arduino's side
-}
-
-- (IBAction)startRight:(id)sender
-{
-    unsigned char toSend = 'd';
-    
-    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
-    
-    [bleShield write:data];
-    
-    //test this by printing rec'd char at Arduino's side
-}
-
-- (IBAction)endPan:(id)sender
-{
-    unsigned char toSend = 'p';
-    
-    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
-    
-    [bleShield write:data];
-}
-
-- (IBAction)startUp:(id)sender
-{
-    unsigned char toSend = 'w';
-    
-    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
-    
-    [bleShield write:data];
-    
-    //test this by printing rec'd char at Arduino's side
-}
-
-- (IBAction)startDown:(id)sender
-{
-    unsigned char toSend = 's';
-    
-    NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
-    
-    [bleShield write:data];
-    
-    //test this by printing rec'd char at Arduino's side
-}
-
-- (IBAction)endTilt:(id)sender
-{
-    unsigned char toSend = 't';
     
     NSData *data = [NSData dataWithBytes: &toSend length: sizeof(toSend)];
     

@@ -184,10 +184,10 @@
 				7A5CEB6A1964AC760036DBDA /* Libraries */,
 				7AC9CA4118AD880F00F75847 /* AppDelegate.h */,
 				7AC9CA4218AD880F00F75847 /* AppDelegate.m */,
-				7AC9CA4418AD880F00F75847 /* Main_iPhone.storyboard */,
-				7AC9CA4718AD880F00F75847 /* Main_iPad.storyboard */,
 				7AC9CA4A18AD880F00F75847 /* ViewController.h */,
 				7AC9CA4B18AD880F00F75847 /* ViewController.m */,
+				7AC9CA4418AD880F00F75847 /* Main_iPhone.storyboard */,
+				7AC9CA4718AD880F00F75847 /* Main_iPad.storyboard */,
 				7AC9CA4D18AD880F00F75847 /* Images.xcassets */,
 				7AC9CA3918AD880F00F75847 /* Supporting Files */,
 			);
@@ -287,7 +287,7 @@
 				ORGANIZATIONNAME = "Project Sentry Gun";
 				TargetAttributes = {
 					7AC9CA2E18AD880F00F75847 = {
-						DevelopmentTeam = 3CDG6WUZC6;
+						DevelopmentTeam = 2P6XS46L68;
 					};
 					7AC9CA5218AD880F00F75847 = {
 						TestTargetID = 7AC9CA2E18AD880F00F75847;

@@ -156,8 +156,8 @@
 {
     if (self.isTouching)
     {
-        CGPoint degreeOfPosition = CGPointMake((self.handle.frame.origin.x/self.handle.frame.size.width-.55)*2,
-                                               (self.handle.frame.origin.y/self.handle.frame.size.height-.55)*2);
+        CGPoint degreeOfPosition = CGPointMake((self.handle.frame.origin.x/self.handle.frame.size.width)*2,
+                                               (self.handle.frame.origin.y/self.handle.frame.size.height)*-2);
         [self.delegate joystick:self didUpdate:degreeOfPosition];
     }
     
