@@ -1,0 +1,24 @@
+Communications Protocol
+=======================
+
+'q' = Quadrant 1 (0 - 45 deg)
+'w' = Quadrant 2
+'e' = Quadrant 3
+'r' = Quadrant 4
+'t' = Quadrant 5
+'y' = Quadrant 6
+'u' = Quadrant 7
+'i' = Quadrant 8 (315 - 360 deg)
+
+
+'f' = Start Fire
+'n' = End Fire
+
+'l' = Disable Turret
+'k' = Enable Turret
+
+'0' = Speed 0
+'1' = Speed 1
+'2' = Speed 2
+'3' = Speed 3
+'4' = Speed 4
