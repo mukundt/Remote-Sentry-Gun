@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7A0AC84318BC48C800E42C4E /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AC84118BC48C800E42C4E /* BLE.m */; };
-		7A26891E196BB2B600A7A1A2 /* splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A26891D196BB2B600A7A1A2 /* splash_screen.png */; };
-		7A268920196BB31900A7A1A2 /* splash_screen_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A26891F196BB31900A7A1A2 /* splash_screen_small.png */; };
 		7A2A906118C646AB00510805 /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A906018C646AB00510805 /* MotionJpegImageView.mm */; };
 		7A362067196B3C97000574A2 /* enable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A362066196B3C97000574A2 /* enable.png */; };
 		7A362069196B3CA4000574A2 /* disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A362068196B3CA4000574A2 /* disable.png */; };
-		7A36206B196B3FBB000574A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A36206A196B3FBB000574A2 /* Default-568h@2x.png */; };
 		7A5CE14019648EB20036DBDA /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE13F19648EB20036DBDA /* fire.png */; };
 		7A5CE14219648F9B0036DBDA /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE14119648F9B0036DBDA /* connect.png */; };
 		7A5CE14419648FA80036DBDA /* disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5CE14319648FA80036DBDA /* disconnect.png */; };
@@ -35,6 +32,8 @@
 		7AC9CA6118AD880F00F75847 /* Remote_Sentry_GunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9CA6018AD880F00F75847 /* Remote_Sentry_GunTests.m */; };
 		7ACA0598196C79AC00A2D110 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ACA0597196C79AC00A2D110 /* joystick.png */; };
 		7ACA05AB196C89AC00A2D110 /* MFLJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA05A7196C89AC00A2D110 /* MFLJoystick.m */; };
+		C44FF3AF196CEACB00D98286 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C44FF3AD196CEACB00D98286 /* Default-568h@2x.png */; };
+		C44FF3B0196CEACB00D98286 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C44FF3AE196CEACB00D98286 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +50,10 @@
 		7A0AC84018BC48C800E42C4E /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		7A0AC84118BC48C800E42C4E /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		7A0AC84218BC48C800E42C4E /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
-		7A26891D196BB2B600A7A1A2 /* splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen.png; sourceTree = "<group>"; };
-		7A26891F196BB31900A7A1A2 /* splash_screen_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_screen_small.png; sourceTree = "<group>"; };
 		7A2A905F18C646AB00510805 /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
 		7A2A906018C646AB00510805 /* MotionJpegImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MotionJpegImageView.mm; sourceTree = "<group>"; };
 		7A362066196B3C97000574A2 /* enable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enable.png; sourceTree = "<group>"; };
 		7A362068196B3CA4000574A2 /* disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disable.png; sourceTree = "<group>"; };
-		7A36206A196B3FBB000574A2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7A5CE13F19648EB20036DBDA /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		7A5CE14119648F9B0036DBDA /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
 		7A5CE14319648FA80036DBDA /* disconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disconnect.png; sourceTree = "<group>"; };
@@ -88,6 +84,8 @@
 		7ACA0597196C79AC00A2D110 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
 		7ACA05A6196C89AC00A2D110 /* MFLJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLJoystick.h; sourceTree = "<group>"; };
 		7ACA05A7196C89AC00A2D110 /* MFLJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLJoystick.m; sourceTree = "<group>"; };
+		C44FF3AD196CEACB00D98286 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Remote-Sentry-Gun/Default-568h@2x.png"; sourceTree = "<group>"; };
+		C44FF3AE196CEACB00D98286 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Remote-Sentry-Gun/Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +146,8 @@
 		7AC9CA2618AD880F00F75847 = {
 			isa = PBXGroup;
 			children = (
-				7A36206A196B3FBB000574A2 /* Default-568h@2x.png */,
+				C44FF3AD196CEACB00D98286 /* Default-568h@2x.png */,
+				C44FF3AE196CEACB00D98286 /* Default@2x.png */,
 				7AC9CA3818AD880F00F75847 /* Remote-Sentry-Gun */,
 				7AC9CA5A18AD880F00F75847 /* Remote-Sentry-GunTests */,
 				7AC9CA3118AD880F00F75847 /* Frameworks */,
@@ -200,8 +199,6 @@
 			children = (
 				7ACA0597196C79AC00A2D110 /* joystick.png */,
 				7AAEB20C196B48A40032AD30 /* dpad.png */,
-				7A26891F196BB31900A7A1A2 /* splash_screen_small.png */,
-				7A26891D196BB2B600A7A1A2 /* splash_screen.png */,
 				7A362068196B3CA4000574A2 /* disable.png */,
 				7A362066196B3C97000574A2 /* enable.png */,
 				7A5CE14319648FA80036DBDA /* disconnect.png */,
@@ -290,7 +287,7 @@
 				ORGANIZATIONNAME = "Project Sentry Gun";
 				TargetAttributes = {
 					7AC9CA2E18AD880F00F75847 = {
-						DevelopmentTeam = 2P6XS46L68;
+						DevelopmentTeam = 3CDG6WUZC6;
 					};
 					7AC9CA5218AD880F00F75847 = {
 						TestTargetID = 7AC9CA2E18AD880F00F75847;
@@ -323,18 +320,17 @@
 			files = (
 				7A362067196B3C97000574A2 /* enable.png in Resources */,
 				7AC9CA4918AD880F00F75847 /* Main_iPad.storyboard in Resources */,
-				7A268920196BB31900A7A1A2 /* splash_screen_small.png in Resources */,
 				7ACA0598196C79AC00A2D110 /* joystick.png in Resources */,
 				7AC9CA4E18AD880F00F75847 /* Images.xcassets in Resources */,
+				C44FF3B0196CEACB00D98286 /* Default@2x.png in Resources */,
 				7AC9CA4618AD880F00F75847 /* Main_iPhone.storyboard in Resources */,
+				C44FF3AF196CEACB00D98286 /* Default-568h@2x.png in Resources */,
 				7A5CE14419648FA80036DBDA /* disconnect.png in Resources */,
 				7A5CE14219648F9B0036DBDA /* connect.png in Resources */,
 				7A362069196B3CA4000574A2 /* disable.png in Resources */,
 				7AC9CA3D18AD880F00F75847 /* InfoPlist.strings in Resources */,
 				7A5CE14019648EB20036DBDA /* fire.png in Resources */,
-				7A36206B196B3FBB000574A2 /* Default-568h@2x.png in Resources */,
 				7AAEB20D196B48A40032AD30 /* dpad.png in Resources */,
-				7A26891E196BB2B600A7A1A2 /* splash_screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,11 +490,13 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Remote-Sentry-Gun/Remote-Sentry-Gun-Prefix.pch";
 				INFOPLIST_FILE = "Remote-Sentry-Gun/Remote-Sentry-Gun-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,11 +508,13 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Remote-Sentry-Gun/Remote-Sentry-Gun-Prefix.pch";
 				INFOPLIST_FILE = "Remote-Sentry-Gun/Remote-Sentry-Gun-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
