@@ -37,10 +37,6 @@
                                     <action selector="startFire:" destination="vXZ-lx-hvc" eventType="touchDown" id="Gwp-hv-3DH"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rsg_text.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sqz-bz-wVC">
-                                <rect key="frame" x="156" y="13" width="244" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfh-4P-eIF">
                                 <rect key="frame" x="4" y="13" width="129" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,7 +69,6 @@
         <image name="connect.png" width="306" height="117"/>
         <image name="enable.png" width="263" height="117"/>
         <image name="fire.png" width="248" height="200"/>
-        <image name="rsg_text.png" width="724" height="126"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
