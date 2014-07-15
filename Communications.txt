@@ -10,16 +10,17 @@ Communications Protocol
 'u' = Quadrant 7
 'i' = Quadrant 8
 
-
-'f' = Start Fire
-'n' = End Fire
-
-'l' = Disable Turret
-'k' = Enable Turret
-
 '0' = Speed 0
 '1' = Speed 1
 '2' = Speed 2
 '3' = Speed 3
 '4' = Speed 4
 '5' = Speed 5
+
+'p' = Stop Turret (Speed = 0)
+
+'f' = Start Fire
+'n' = End Fire
+
+'l' = Disable Turret
+'k' = Enable Turret
