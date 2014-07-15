@@ -127,17 +127,17 @@
     
     unsigned char speed = '0';
     
-    if (dist > 0) speed = '1';
+    if (dist > 0.2) speed = '1';
     
-    if (dist > 0.1) speed = '2';
+    if (dist > 0.25) speed = '2';
     
-    if (dist > 0.2) speed = '3';
+    if (dist > 0.3) speed = '3';
     
-    if (dist > 0.3) speed = '4';
+    if (dist > 0.35) speed = '4';
     
     if (dist > 0.4) speed = '5';
     
-    if (dist == 0) quad = 'p';
+    if (speed == '0') quad = 'p';
     
     [self sendMovement:quad withArg2:speed];
 }
