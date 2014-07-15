@@ -28,7 +28,7 @@
 #define PIN_SAFETY_A 5 // blue
 #define PIN_SAFETY_B 6 // green
 
-int step_amount = 1;
+#define step_amount 1
 
 Stepper pan(pan_step_pin, pan_direction_pin, pan_enable_pin);
 Stepper tilt(tilt_step_pin, tilt_direction_pin, tilt_enable_pin);
@@ -71,9 +71,37 @@ void loop() {
         ble_do_events();
         velocity = (char)ble_read(); 
       }
-      step_amount = (int)velocity - 48; // de-ascii
     }
     //Serial.println(command);
+    switch (velocity)
+    {
+      case '0':
+        pan.set_delay(2.0);
+        tilt.set_delay(2.0);
+        break;
+      case '1':
+        pan.set_delay(5.0);
+        tilt.set_delay(10.0);
+        break;
+      case '2':
+        pan.set_delay(3.5);
+        tilt.set_delay(7.0);
+        break;
+      case '3':
+        pan.set_delay(2.2);
+        tilt.set_delay(4.4);
+        break;
+      case '4':
+        pan.set_delay(1.5);
+        tilt.set_delay(3.0);
+        break;
+      case '5':
+        pan.set_delay(1.0);
+        tilt.set_delay(2.0);
+        break;
+      default: 
+        break;
+    }
     switch (command)
     {
       case 'q':
