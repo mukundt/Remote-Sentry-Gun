@@ -1,14 +1,14 @@
 Communications Protocol
 =======================
 
-'q' = Quadrant 1 (0 - 45 deg)
-'w' = Quadrant 2
+'q' = Quadrant 1 (337.5 - 22.5 deg)
+'w' = Quadrant 2 (22.5 - 45 deg)
 'e' = Quadrant 3
 'r' = Quadrant 4
 't' = Quadrant 5
 'y' = Quadrant 6
 'u' = Quadrant 7
-'i' = Quadrant 8 (315 - 360 deg)
+'i' = Quadrant 8
 
 
 'f' = Start Fire
