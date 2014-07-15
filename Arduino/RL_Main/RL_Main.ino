@@ -65,9 +65,23 @@ void loop() {
   //while (Serial.available())
   {
     char command = (char)ble_read();
-    delay(100);
-    char velocity = '0';
-    Serial.println(command);
+    char velocity = '#';
+    if (command == 'q' || command == 'w' || command == 'e' || command == 'r' || command == 't' || command == 'y' || command == 'u' || command == 'i') {
+//      ble_do_events();
+//      delay(20);  // give the next byte time to ride the pipe
+//      velocity = (char)ble_read(); 
+//      int count = 0;
+      while (velocity != '0' && velocity != '1' && velocity != '2' && velocity != '3' && velocity != '4' && velocity != '5') {
+        ble_do_events();
+        velocity = (char)ble_read(); 
+//        Serial.print(velocity);
+//        count++;
+      }
+      Serial.print("VELPOCITY = ");
+      Serial.println(velocity);
+//      Serial.print("   COUNT = ");
+//      Serial.println(count);
+    }
     //Serial.println(command);
     switch (command)
     {
