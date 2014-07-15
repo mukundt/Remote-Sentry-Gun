@@ -28,7 +28,7 @@
 #define PIN_SAFETY_A 5 // blue
 #define PIN_SAFETY_B 6 // green
 
-#define step_amount 1
+int step_amount = 1;
 
 Stepper pan(pan_step_pin, pan_direction_pin, pan_enable_pin);
 Stepper tilt(tilt_step_pin, tilt_direction_pin, tilt_enable_pin);
@@ -71,70 +71,60 @@ void loop() {
         ble_do_events();
         velocity = (char)ble_read(); 
       }
-      Serial.print("VELPOCITY = ");
-      Serial.println(velocity);
+      step_amount = (int)velocity - 48; // de-ascii
     }
     //Serial.println(command);
     switch (command)
     {
       case 'q':
-        velocity = (char)ble_read();
         pan_right = true;
         pan_left = false;
         tilt_up = false;
         tilt_down = false;
         break;
       case 'w':
-        velocity = (char)ble_read();
         pan_right = true;
         pan_left = false;
         tilt_up = true;
         tilt_down = false;
         break;
       case 'e':
-        velocity = (char)ble_read();
         pan_right = false;
         pan_left = false;
         tilt_up = true;
         tilt_down = false;
         break;
       case 'r':
-        velocity = (char)ble_read();
         pan_right = false;
         pan_left = true;
         tilt_up = true;
         tilt_down = false;
         break;
       case 't':
-        velocity = (char)ble_read();
         pan_right = false;
         pan_left = true;
         tilt_up = false;
         tilt_down = false;
         break;
       case 'y':
-        velocity = (char)ble_read();
         pan_right = false;
         pan_left = true;
         tilt_up = false;
         tilt_down = true;
         break;
       case 'u':
-        velocity = (char)ble_read();
         pan_right = false;
         pan_left = false;
         tilt_up = false;
         tilt_down = true;
         break;
       case 'i':
-        velocity = (char)ble_read();
         pan_right = true;
         pan_left = false;
         tilt_up = false;
         tilt_down = true;
         break;
       case 'p': 
-        velocity = (char)ble_read();
         pan_left = false;
         pan_right = false;
         tilt_up = false;
