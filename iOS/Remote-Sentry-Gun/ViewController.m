@@ -104,24 +104,26 @@
 {
     double rad = atan2(30 * dir.y, 30 * dir.x);
     double deg = (rad > 0 ? rad : (2*M_PI + rad)) * 360 / (2*M_PI);
-
-    unsigned char quad = 'q';
-    
-    if (45 <= deg) quad = 'w';
-    
-    if (90 <= deg) quad = 'e';
-    
-    if (135 <= deg) quad = 'r';
-    
-    if (180 <= deg) quad = 't';
-    
-    if (225 <= deg) quad = 'y';
-    
-    if (270 <= deg) quad = 'u';
-    
-    if (315 <= deg) quad = 'i';
-    
     double dist = sqrt(dir.x * dir.x + dir.y*dir.y);
+    
+    unsigned char quad;
+    
+    if(deg <= 22.5 || deg > 337.5) quad = 'q';
+    
+    if (22.5 < deg && deg <= 67.5) quad = 'w';
+    
+    if (67.5 < deg && deg <= 112.5) quad = 'e';
+    
+    if (112.5 < deg && deg <= 157.5) quad = 'r';
+    
+    if (157.5 < deg && deg <= 202.5) quad = 't';
+    
+    if (202.5 < deg && deg <= 247.5) quad = 'y';
+    
+    if (247.5 < deg && deg <= 292.5) quad = 'u';
+    
+    if (292.5 < deg && deg <= 337.5) quad = 'i';
+    
     
     unsigned char speed = '0';
     
@@ -134,6 +136,8 @@
     if (dist > 0.3) speed = '4';
     
     if (dist > 0.4) speed = '5';
+    
+    if (dist == 0) quad = 'p';
     
     [self sendMovement:quad withArg2:speed];
 }
