@@ -56,7 +56,7 @@ void setup() {
   ble_begin();
 
   //Temporary serial code - comment when done
-  //Serial.begin(57600);
+  Serial.begin(57600);
 }
 
 void loop() {
@@ -65,26 +65,74 @@ void loop() {
   //while (Serial.available())
   {
     char command = (char)ble_read();
+    delay(100);
+    char velocity = '0';
+    Serial.println(command);
     //Serial.println(command);
     switch (command)
     {
-      case 'a': 
-        pan_left = true; 
-        break;
-      case 'd': 
+      case 'q':
+        velocity = (char)ble_read();
         pan_right = true;
+        pan_left = false;
+        tilt_up = false;
+        tilt_down = false;
         break;
-      case 'p': 
-        pan_left = pan_right = false;
-        break;
-      case 'w': 
+      case 'w':
+        velocity = (char)ble_read();
+        pan_right = true;
+        pan_left = false;
         tilt_up = true;
+        tilt_down = false;
         break;
-      case 's': 
+      case 'e':
+        velocity = (char)ble_read();
+        pan_right = false;
+        pan_left = false;
+        tilt_up = true;
+        tilt_down = false;
+        break;
+      case 'r':
+        velocity = (char)ble_read();
+        pan_right = false;
+        pan_left = true;
+        tilt_up = true;
+        tilt_down = false;
+        break;
+      case 't':
+        velocity = (char)ble_read();
+        pan_right = false;
+        pan_left = true;
+        tilt_up = false;
+        tilt_down = false;
+        break;
+      case 'y':
+        velocity = (char)ble_read();
+        pan_right = false;
+        pan_left = true;
+        tilt_up = false;
         tilt_down = true;
         break;
-      case 't': 
-        tilt_up = tilt_down = false;
+      case 'u':
+        velocity = (char)ble_read();
+        pan_right = false;
+        pan_left = false;
+        tilt_up = false;
+        tilt_down = true;
+        break;
+      case 'i':
+        velocity = (char)ble_read();
+        pan_right = true;
+        pan_left = false;
+        tilt_up = false;
+        tilt_down = true;
+        break;
+      case 'p': 
+        velocity = (char)ble_read();
+        pan_left = false;
+        pan_right = false;
+        tilt_up = false;
+        tilt_down = false;
         break;
       case 'f':
         trigger_on = true;
@@ -113,14 +161,15 @@ void loop() {
       default: 
         break;
     }
+//    Serial.println(velocity);
   }
   
   //sends relevant command every clock cycle
   if (pan_left) pan.move_relative(step_amount);
-  else if (pan_right) pan.move_relative(-step_amount);
-  else if (tilt_up) tilt.move_relative(step_amount);
-  else if (tilt_down) tilt.move_relative(-step_amount);
-  else if (trigger_on) trigger.single_shot();
+  if (pan_right) pan.move_relative(-step_amount);
+  if (tilt_up) tilt.move_relative(step_amount);
+  if (tilt_down) tilt.move_relative(-step_amount);
+  if (trigger_on) trigger.single_shot();
 
   ble_do_events();
 }
