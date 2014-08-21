@@ -287,7 +287,7 @@
 				ORGANIZATIONNAME = "Project Sentry Gun";
 				TargetAttributes = {
 					7AC9CA2E18AD880F00F75847 = {
-						DevelopmentTeam = 3CDG6WUZC6;
+						DevelopmentTeam = 2P6XS46L68;
 					};
 					7AC9CA5218AD880F00F75847 = {
 						TestTargetID = 7AC9CA2E18AD880F00F75847;
