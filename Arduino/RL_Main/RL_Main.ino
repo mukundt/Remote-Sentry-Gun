@@ -7,6 +7,8 @@
 //  Copyright (c) 2014 Project Sentry Gun. All rights reserved.
 //
 
+#define EYES_OFF true
+
 #include <SPI.h>
 #include <boards.h>
 #include <ble_shield.h>
@@ -22,11 +24,11 @@
 #define tilt_direction_pin 18
 #define tilt_enable_pin 19
 
-#define trigger_pin 7   // purple
-
-#define PIN_POWER 4    // red & yellow
+#define trigger_pin 6   // purple
+#define PIN_POWER 3    // red & yellow
 #define PIN_SAFETY_A 5 // blue
-#define PIN_SAFETY_B 6 // green
+#define PIN_SAFETY_B 4 // green
+#define PIN_HOPPER 7
 
 #define step_amount 1
 
@@ -44,6 +46,7 @@ void setup() {
   pinMode(PIN_POWER, OUTPUT);
   pinMode(PIN_SAFETY_A, OUTPUT);
   pinMode(PIN_SAFETY_B, OUTPUT);
+  pinMode(PIN_HOPPER, OUTPUT);
   
   digitalWrite(PIN_POWER, LOW);
   safety_on();
@@ -166,10 +169,19 @@ void loop() {
         break;
       case 'k':
         if (!gun_armed) {
+          if (EYES_OFF) {
+            trigger.squeeze();
+          }
           power_toggle();
+          if (EYES_OFF) {
+            trigger.release();
+          }
           delay(1000);
           safety_off();
           delay(1000);
+          digitalWrite(PIN_HOPPER, HIGH);
+          delay(250);
+          digitalWrite(PIN_HOPPER, LOW);
           gun_armed = true;
         }
         break;
@@ -179,6 +191,10 @@ void loop() {
           delay(1000);
           power_toggle();
           delay(1000);
+          digitalWrite(PIN_HOPPER, HIGH);
+          delay(1000);
+          digitalWrite(PIN_HOPPER, LOW);
+          
           gun_armed = false;
         }
         break;
@@ -189,10 +205,10 @@ void loop() {
   }
   
   //sends relevant command every clock cycle
-  if (pan_left) pan.move_relative(step_amount);
-  if (pan_right) pan.move_relative(-step_amount);
-  if (tilt_up) tilt.move_relative(step_amount);
-  if (tilt_down) tilt.move_relative(-step_amount);
+  if (pan_left) pan.move_relative(-step_amount);
+  if (pan_right) pan.move_relative(step_amount);
+  if (tilt_up) tilt.move_relative(-step_amount);
+  if (tilt_down) tilt.move_relative(step_amount);
   if (trigger_on) trigger.single_shot();
 
   ble_do_events();
